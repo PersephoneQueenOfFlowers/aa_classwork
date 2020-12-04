@@ -20,9 +20,30 @@ class PolyTreeNode
     end
   end
 
-  def add_child( cNode )
+  def add_child(cNode)
     cNode.parent = self
   end
+
+  def remove_child(cNode)
+    if self.children.include?(cNode)
+      cNode.parent = nil 
+    else  
+      raise "node is not a child"
+    end
+  end
+
+  def bfs target 
+    return nil if self.nil?
+    queue = [self]
+    
+    until queue.empty?
+      first = queue.shift  
+      return first if first.value == target  
+      queue.concat(first.children) 
+    end
+    nil  
+  end
+
 end
 
 
