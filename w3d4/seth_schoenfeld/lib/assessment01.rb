@@ -4,11 +4,16 @@ class Array
   # **Do NOT use the built-in `Array#inject` or `Array#reduce` methods in your 
   # implementation.**
 
-  def my_inject(accumulator, &prc)
-    if acc == nil 
-      acc = self.first
+  def my_inject(accumulator = nil, &prc)
+    
+    accumulator ||= self.first
+    # if accumulator == nil 
+    #   acc = self.first
+    # if acc takes first ele, then start with second 
+    # end
+    (i..self[-1]).each_with_index do |el,idx |
+      accumulator = prc.call(acc, el) #from second element on)
     end
-    injected = prc.call(acc, self)
 
   end
 end
