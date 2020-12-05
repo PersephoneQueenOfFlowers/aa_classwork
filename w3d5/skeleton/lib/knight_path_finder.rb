@@ -71,8 +71,9 @@ class KnightPathFinder
   end
 end
 
-
-#---Test-------------------------#
-kpf = KnightPathFinder.new([0, 0])
-p kpf.find_path([2, 1]) # => [[0, 0], [2, 1]]
-p kpf.find_path([3, 3]) # => [[0, 0], [2, 1], [3, 3]]
+# Test
+if __FILE__ == $PROGRAM_NAME
+  kpf = KnightPathFinder.new([0, 0])
+  p kpf.find_path([2, 1]) # => [[0, 0], [2, 1]]
+  p kpf.find_path([3, 3]) # => [[0, 0], [2, 1], [3, 3]]
+end
