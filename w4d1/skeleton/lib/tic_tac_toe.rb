@@ -93,9 +93,9 @@ class TicTacToe
   attr_reader :board, :players, :turn
 
   def initialize(player1, player2)
-    @board = Board.new
-    @players = { :x => player1, :o => player2 }
-    @turn = :x
+   board = Board.new
+    mark = :x
+    node = TicTacToeNode.new(board, mark)
   end
 
   def run
