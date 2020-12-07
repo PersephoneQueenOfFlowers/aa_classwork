@@ -1,5 +1,5 @@
 require_relative 'tic_tac_toe'
-
+require 'byebug'
 class TicTacToeNode
   attr_accessor :board, :next_mover_mark, :prev_move_pos
   def initialize(board, next_mover_mark, prev_move_pos = nil)
@@ -7,6 +7,7 @@ class TicTacToeNode
     @board = board
     @next_mover_mark = next_mover_mark
     @prev_move_pos = prev_move_pos
+    # @children = children 
 
   end
 
@@ -17,7 +18,11 @@ class TicTacToeNode
   end
 
   def flip_mark
-    @next_mover_mark == :x ? :o : :x
+    if @next_mover_mark == :x 
+      :o 
+    else
+      :x
+    end
   end
 
   # This method generates an array of all moves that can be made after
@@ -28,14 +33,15 @@ class TicTacToeNode
       (0..2).each do |col|
         pos = [row, col]
         if @board.empty?(pos)
-          new_node = @board.dup
-          new_node[pos] = @next_mover_mark
-          # new_node.next_mover_mark = flip_mark
-          # new_node.prev_move_pos =  pos
-          # poss_moves << new_node
+          new_board = @board.dup
+          new_board[pos] = @next_mover_mark
+          new_mark = flip_mark 
+          new_node = TicTacToeNode.new(new_board,new_mark,pos)
+          poss_moves << new_node
         end
       end
     end
+    debugger
     poss_moves
   end
 end
