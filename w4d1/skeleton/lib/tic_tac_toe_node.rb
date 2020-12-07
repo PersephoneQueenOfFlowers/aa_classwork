@@ -7,11 +7,18 @@ class TicTacToeNode
     @board = board
     @next_mover_mark = next_mover_mark
     @prev_move_pos = prev_move_pos
-    # @children = children 
-
   end
 
   def losing_node?(evaluator)
+    return true if @board.over? && @board.winner != evaluator
+    return false if @board.winner.nil? || @board.winner == evaluator 
+
+    #iterate over children and determine if applying evaluator to any child creates loser
+    children.each do |child|
+      # losing_node?(child.board)
+      p child
+    end
+
   end
 
   def winning_node?(evaluator)
@@ -41,7 +48,6 @@ class TicTacToeNode
         end
       end
     end
-    debugger
     poss_moves
   end
 end
