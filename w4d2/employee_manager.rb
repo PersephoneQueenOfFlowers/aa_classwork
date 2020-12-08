@@ -30,3 +30,13 @@ end
 
 p emp_1 = Employee.new("Ned", "IT Consultant", 70000)
 p emp_1.boss("Nicole")
+
+# def dfs target
+#     return nil if self.nil?
+#     return self if self.value == target
+#     @children.each do |child|
+#       result = child.dfs(target)
+#       return result unless result.nil?
+#     end
+#     nil
+#   end
