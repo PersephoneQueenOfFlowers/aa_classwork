@@ -1,11 +1,14 @@
 class Employee 
 
   attr_reader :name, :title, :salary, :boss
-  def initialize(name, title, salary, boss)
+  def initialize(name, title, salary)
     @name = name
     @title = title
     @salary = salary
-    @boss = boss
+  end
+
+  def boss boss_str
+    @boss = boss_str
   end
 
   def bonus(mult)
@@ -25,4 +28,5 @@ class Manager < Employee
 
 end
 
-emp_1 = Employee.new("Ned", "IT Consultant", 70000, mgr_1)
+p emp_1 = Employee.new("Ned", "IT Consultant", 70000)
+p emp_1.boss("Nicole")
