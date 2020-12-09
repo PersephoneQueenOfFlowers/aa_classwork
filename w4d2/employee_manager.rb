@@ -42,11 +42,15 @@ class Manager < Employee
 
   def dfs
     return nil if self.employees.empty?
-    @emp_salaries
+    @emp_salaries = 0
     @employees.each do |emp|
-      @emp_salaries += emp.salary += emp.dfs
+      if emp.is_a?(Manager)
+        @emp_salaries += emp.dfs
+      else
+        @emp_salaries += emp.salary
+      end
     end
-    nil
+    @emp_salaries
   end
 
 end
@@ -56,8 +60,8 @@ emp_2 = Employee.new("Tom", "software engineer", 80000)
 emp_4 = Employee.new("Tim", "janitor", 45000)           
 emp_5 = Employee.new("Dan", "janitor", 45000)
 
-mgr_1 = Manager.new("Nicole", "Team Leader", 100000, [emp_1,emp_2])
 emp_3 = Manager.new("Joe", "plant services manager", 60000, [emp_4, emp_5])
+mgr_1 = Manager.new("Nicole", "Team Leader", 100000, [emp_1,emp_2,emp_3])
 
 
 
