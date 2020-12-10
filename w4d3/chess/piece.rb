@@ -1,10 +1,15 @@
-class Piece 
 
+class Piece 
+  attr_accessor :color, :board, :position
   def initialize color, board, pos
     @color = color 
     @board = board  
-    @position = pos 
+    @position = [pos]
   end
+
+  # def moves 
+  #   self
+  # end
 
   def to_s 
 
