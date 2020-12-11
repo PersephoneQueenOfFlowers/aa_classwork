@@ -32,6 +32,18 @@ def largest_contiguous_subsum(arr)
 
 end
 
+def lcs(arr)
+  neighbor_sums = []
+  largest = arr[0..1].sum 
+   (0...arr.length-1).each do |i|
+      neighbor_sums << arr[i] + arr[i+1] 
+   end
+   max_sum = 0 
+   largest.each do |pair_sum|
+    
+   end
+end
+
 list = [2, 3, -6, 7, -6, 7]
 largest_contiguous_subsum(list)
 
