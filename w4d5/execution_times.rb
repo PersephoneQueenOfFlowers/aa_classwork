@@ -23,11 +23,23 @@ end
 
 def largest_contiguous_subsum(arr)
   largest = 0
-  (0...arr.length).each do |i|
-    debugger
-    current_sub = arr[i...(arr.length-i)]
-    current_sum = current_sub.sum 
-    largest = current_sum if current_sum > largest
+  # (0...arr.length).each do |i| #on first loop, we're summing all ele's. Figure out a way to get all contiguous sums from this idx in this iteration
+  #   debugger
+  #   current_sub = arr[i...(arr.length-i)]
+  #   current_sum = current_sub.sum 
+  #   largest = current_sum if current_sum > largest
+  # end
+  i = 0
+  j = arr.length-1
+  while i < arr.length
+    current_sum = arr.sum
+    if current_sum < arr[i..j] 
+      current_sum = arr[i..j]
+      j-=1
+    end
+       
+
+
   end
 
 end
