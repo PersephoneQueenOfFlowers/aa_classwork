@@ -20,7 +20,7 @@ end
 #   end
 #   max
 # end
-def largest_contiguous_subsum(arr)
+def largest_contiguous_subsum(arr) #BigO of O(n)
   max = 0 
   current_sum = 0
   arr.each_with_index do |el,idx|
