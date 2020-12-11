@@ -20,44 +20,22 @@ end
 #   end
 #   max
 # end
-
 def largest_contiguous_subsum(arr)
-  largest = 0
-  # (0...arr.length).each do |i| #on first loop, we're summing all ele's. Figure out a way to get all contiguous sums from this idx in this iteration
-  #   debugger
-  #   current_sub = arr[i...(arr.length-i)]
-  #   current_sum = current_sub.sum 
-  #   largest = current_sum if current_sum > largest
-  # end
-  i = 0
-  j = arr.length-1
-  while i < arr.length
-    current_sum = arr.sum
-    if current_sum < arr[i..j] 
-      current_sum = arr[i..j]
-      j-=1
-    end
-       
-
-
-  end
-
-end
-
-def lcs(arr)
-  neighbor_sums = []
-  largest = arr[0..1].sum 
-   (0...arr.length-1).each do |i|
-      neighbor_sums << arr[i] + arr[i+1] 
-   end
-   max_sum = 0 
-   largest.each do |pair_sum|
-    
-   end
+  max = 0 
+  current_sum = 0
+  arr.each_with_index do |el,idx|
+    if current_sum + el >= el 
+      current_sum += el  
+    else  
+      current_sum = el  
+    end 
+    max = current_sum if current_sum > max 
+  end 
+  max
 end
 
 list = [2, 3, -6, 7, -6, 7]
-largest_contiguous_subsum(list)
+p largest_contiguous_subsum(list)
 
 
 
