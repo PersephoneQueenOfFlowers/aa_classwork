@@ -67,12 +67,7 @@ class ResizingIntSet
   end
 
   def insert(num)
-    if @store.length == @count 
-      flattened = @store.flatten
-      array = Array.new(@store.length * 2){Array.new}   
-      flattened.each{ |ele| array[ele % array.length] << ele  }
-      @store = array    
-    end
+    resize! if @store.length == @count 
 
     if !@store[num % @store.length].include?(num)
       @store[num % @store.length] << num
@@ -81,6 +76,11 @@ class ResizingIntSet
   end
 
   def remove(num)
+    bucket = @store[num % @store.length]
+    if bucket.include?(num)
+      bucket.delete(num)
+      @count -= 1
+    end
   end
 
   def include?(num)
@@ -98,5 +98,9 @@ class ResizingIntSet
   end
 
   def resize!
+    flattened = @store.flatten
+    array = Array.new(@store.length * 2){Array.new}   
+    flattened.each{ |ele| array[ele % array.length] << ele  }
+    @store = array    
   end
 end
