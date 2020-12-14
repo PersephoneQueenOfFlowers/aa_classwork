@@ -11,9 +11,11 @@ class MaxIntSet
   end
 
   def remove(num)
+    @store[num] = false
   end
 
   def include?(num)
+    @store[num]
   end
 
   private
@@ -32,12 +34,15 @@ class IntSet
   end
 
   def insert(num)
+    @store[num % @store.length] << num
   end
 
   def remove(num)
+    @store[num % @store.length] -= [num]
   end
 
   def include?(num)
+    @store[num % @store.length].include?(num)
   end
 
   private
