@@ -21,6 +21,9 @@ end
 
 class LinkedList
   def initialize
+    @linked_list = []  
+    @head = Node.new()
+    @tail = Node.new()
   end
 
   def [](i)
