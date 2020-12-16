@@ -1,21 +1,35 @@
-DROP TABLE IF EXISTS plays;
+DROP TABLE IF EXISTS users;
 
-CREATE TABLE plays (
+CREATE TABLE users (
   id INTEGER PRIMARY KEY,
-  title TEXT NOT NULL,
-  year INTEGER NOT NULL,
-  playwright_id INTEGER NOT NULL,
+  fname TEXT NOT NULL,
+  lname TEXT NOT NULL,
 
-  FOREIGN KEY (playwright_id) REFERENCES playwrights(id)
+  FOREIGN KEY (id) REFERENCES questions(author_id)
 );
 
-DROP TABLE if exists playwrights;
+DROP TABLE if exists questions;
 
-CREATE TABLE playwrights (
-  id INTEGER PRIMARY KEY,
-  name TEXT NOT NULL,
-  birth_year INTEGER
+CREATE TABLE questions (
+  author_id INTEGER PRIMARY KEY,
+  q_title TEXT NOT NULL,
+  q_body TEXT NOT NULL
+
+  FOREIGN KEY (q_title) REFERENCES question_follows(q_f_title)
+  FOREIGN KEY (q_body) REFERENCES question_follows(q_f_body)
 );
+
+CREATE TABLE question_follows (
+  question_follows_id INTEGER PRIMARY KEY,
+  q_f_title TEXT NOT NULL,
+  q_f_body TEXT NOT NULL,
+
+  FOREIGN KEY (q_f_title) REFERENCES questions(q_title)
+  FOREIGN KEY (q_f_body) REFERENCES questions(q_body)
+
+);
+
+
 
 INSERT INTO
   playwrights (name, birth_year)
