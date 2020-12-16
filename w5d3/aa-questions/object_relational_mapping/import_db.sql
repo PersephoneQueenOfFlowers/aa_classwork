@@ -18,40 +18,45 @@ CREATE TABLE questions (
   FOREIGN KEY (author_id) REFERENCES users(id)
 );
 
-DROP TABLE if exists question_follows;
-
-CREATE TABLE question_follows (
-  id INTEGER PRIMARY KEY,
-  question_id TEXT NOT NULL,
-  user_id TEXT NOT NULL,
-
-  FOREIGN KEY (question_id) REFERENCES questions(id)
-  FOREIGN KEY (user_id) REFERENCES users(id)
-
-);
-
-DROP TABLE if exists replies;
-
-CREATE TABLE replies (
-  replies_id INTEGER PRIMARY KEY,
-  reply TEXT NOT NULL,
-  author TEXT NOT NULL,
-
-  FOREIGN KEY (q_f_title) REFERENCES questions(q_title)
-  FOREIGN KEY (q_f_body) REFERENCES questions(q_body)
-
-);
+INSERT INTO
+  users (fname, lname)
+VALUES
+  ('Arthur', 'Miller'),
+  ('John', 'Smith'),
+  ('Adam', 'Miller'),
+  ('Julie', 'Black'),
+  ('Eugene', 'Neill');
 
 
 INSERT INTO
-  playwrights (name, birth_year)
+  questions (q_title, q_body)
 VALUES
-  ('Arthur Miller', 1915),
-  ('Eugene O''Neill', 1888);
+  ('ready_for_sql', 'are we ready to code some sql?'),
+  ('sqlite3', 'are we ready to code some sqlite3?');
 
 
-INSERT INTO
-  plays (title, year, playwright_id)
-VALUES
-  ('All My Sons', 1947, (SELECT id FROM playwrights WHERE name = 'Arthur Miller')),
-  ('Long Day''s Journey Into Night', 1956, (SELECT id FROM playwrights WHERE name = 'Eugene O''Neill'));
+-- DROP TABLE if exists question_follows;
+
+-- CREATE TABLE question_follows (
+--   id INTEGER PRIMARY KEY,
+--   question_id TEXT NOT NULL,
+--   user_id TEXT NOT NULL,
+
+--   FOREIGN KEY (question_id) REFERENCES questions(id)
+--   FOREIGN KEY (user_id) REFERENCES users(id)
+
+-- );
+
+-- DROP TABLE if exists replies;
+
+-- CREATE TABLE replies (
+--   replies_id INTEGER PRIMARY KEY,
+--   reply TEXT NOT NULL,
+--   author TEXT NOT NULL,
+
+--   FOREIGN KEY (q_f_title) REFERENCES questions(q_title)
+--   FOREIGN KEY (q_f_body) REFERENCES questions(q_body)
+
+-- );
+
+
