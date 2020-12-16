@@ -11,18 +11,31 @@ CREATE TABLE users (
 DROP TABLE if exists questions;
 
 CREATE TABLE questions (
-  author_id INTEGER PRIMARY KEY,
+  id INTEGER PRIMARY KEY,
   q_title TEXT NOT NULL,
   q_body TEXT NOT NULL
 
-  FOREIGN KEY (q_title) REFERENCES question_follows(q_f_title)
-  FOREIGN KEY (q_body) REFERENCES question_follows(q_f_body)
+  FOREIGN KEY (author_id) REFERENCES users(id)
 );
 
+DROP TABLE if exists question_follows;
+
 CREATE TABLE question_follows (
-  question_follows_id INTEGER PRIMARY KEY,
-  q_f_title TEXT NOT NULL,
-  q_f_body TEXT NOT NULL,
+  id INTEGER PRIMARY KEY,
+  question_id TEXT NOT NULL,
+  user_id TEXT NOT NULL,
+
+  FOREIGN KEY (question_id) REFERENCES questions(id)
+  FOREIGN KEY (user_id) REFERENCES users(id)
+
+);
+
+DROP TABLE if exists replies;
+
+CREATE TABLE replies (
+  replies_id INTEGER PRIMARY KEY,
+  reply TEXT NOT NULL,
+  author TEXT NOT NULL,
 
   FOREIGN KEY (q_f_title) REFERENCES questions(q_title)
   FOREIGN KEY (q_f_body) REFERENCES questions(q_body)
@@ -30,12 +43,12 @@ CREATE TABLE question_follows (
 );
 
 
-
 INSERT INTO
   playwrights (name, birth_year)
 VALUES
   ('Arthur Miller', 1915),
   ('Eugene O''Neill', 1888);
+
 
 INSERT INTO
   plays (title, year, playwright_id)
