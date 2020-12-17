@@ -181,10 +181,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-<<<<<<< HEAD
   ruby
-=======
->>>>>>> 6f4b6ceaf7ae60bd43c44e82fda3f53b34c06749
   x86_64-darwin-19
 
 DEPENDENCIES
@@ -209,8 +206,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-<<<<<<< HEAD
-   2.2.0
-=======
    2.2.1
->>>>>>> 6f4b6ceaf7ae60bd43c44e82fda3f53b34c06749
