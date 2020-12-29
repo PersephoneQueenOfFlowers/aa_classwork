@@ -115,3 +115,28 @@ Processing by Rails::WelcomeController#index as */*
 Completed 200 OK in 975ms (Views: 550.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/users" for ::1 at 2020-12-29 14:48:31 -0800
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 195ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-12-29 14:51:04 -0800
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-12-29 14:53:22 -0800
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-12-29 14:54:32 -0800
+Processing by UsersController#index as */*
+Started GET "/users?fave_food=pizza&admin=true" for ::1 at 2020-12-29 14:56:24 -0800
+Processing by UsersController#index as */*
+  Parameters: {"fave_food"=>"pizza", "admin"=>"true"}
