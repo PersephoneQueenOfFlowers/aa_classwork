@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: routes_and_controllers_development
+  database: routes_controllers_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: routes_and_controllers
+  #username: routes_controllers
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: routes_and_controllers_test
+  database: routes_controllers_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: routes_and_controllers_production
-  username: routes_and_controllers
-  password: <%= ENV['ROUTES_AND_CONTROLLERS_DATABASE_PASSWORD'] %>
+  database: routes_controllers_production
+  username: routes_controllers
+  password: <%= ENV['ROUTES_CONTROLLERS_DATABASE_PASSWORD'] %>
