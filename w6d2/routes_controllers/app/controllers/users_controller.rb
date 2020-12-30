@@ -1,23 +1,50 @@
 class UsersController < ApplicationController
+
+  # validates :username, presence: true
+  
   def index
-    debugger
-    users_all = User.select(:name,:email)
+    users_all = User.select(:username)
     render json: users_all
   end
 
   def create
+    params
+    user = User.new( user_params )
+   
+    if user.save!  
+      render json: user
+    else  
+      render json: user.errors.full_messages, status: :unprocessable_entity
+    end
 
-    user = User.new(params.require(:user).permit( [':name'],[':email'] ) )
-   debugger
-    user[:name] = params[:user][':name']
-    user[:email] = params[:user][':email']
-    user.save!
+  end
 
-    render json: user
+  def update
+
+    user = User.find(params[:id])
+
+    success = user.update( user_params )
+    if success
+      render json: user 
+    else
+      render json: errors.full_messages, status: :unprocessable_entity
+    end
   end
 
   def show
-    render json: params
+    user = User.find(params[:id])
+    render json: user
+  end
+
+  def destroy 
+    user = User.find(params[:id])
+    user.destroy 
+    render json: user 
+  end
+
+  private
+  def user_params
+    self.params[:user].permit( :username )
   end
 
 end
