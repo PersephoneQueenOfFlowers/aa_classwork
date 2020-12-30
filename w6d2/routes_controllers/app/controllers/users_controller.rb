@@ -1,14 +1,11 @@
 class UsersController < ApplicationController
 
-  # validates :username, presence: true
-  
   def index
     users_all = User.select(:username)
     render json: users_all
   end
 
   def create
-    params
     user = User.new( user_params )
    
     if user.save!  
