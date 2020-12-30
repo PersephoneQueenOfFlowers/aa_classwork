@@ -245,6 +245,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
 Started POST "/users/5" for ::1 at 2020-12-29 16:08:01 -0800
   
 ActionController::RoutingError (No route matches [POST] "/users/5"):
@@ -276,6 +277,7 @@ puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
 puma (3.12.6) lib/puma/server.rb:476:in `process_client'
 puma (3.12.6) lib/puma/server.rb:334:in `block in run'
 puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
 Started POST "/users" for ::1 at 2020-12-29 16:11:49 -0800
 Processing by UsersController#create as */*
   Parameters: {"some_category"=>{"a_key"=>"another_value", "b_key"=>"yet_another_value", "inner_hash"=>{"key"=>"value"}}, "something_else"=>"ahhh"}
