@@ -315,3 +315,616 @@ Migrating to CreateUsers (20201230001426)
   ↳ bin/rails:9
   [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (30.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "routes_controllers_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (33.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "routes_controllers_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (144.3ms)[0m  [1m[35mCREATE DATABASE "routes_controllers_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (56.0ms)[0m  [1m[35mCREATE DATABASE "routes_controllers_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20201230001426)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying NOT NULL, "email" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20201230001426_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201230001426"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-12-30 01:47:25.462312"], ["updated_at", "2020-12-30 01:47:25.462312"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(642293562874849410)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "bill"], ["email", "myemail@email.email"], ["created_at", "2020-12-30 01:48:14.775274"], ["updated_at", "2020-12-30 01:48:14.775274"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "wyatt"], ["email", "whyit@erp.myail"], ["created_at", "2020-12-30 01:59:30.194941"], ["updated_at", "2020-12-30 01:59:30.194941"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Greg"], ["email", "gerg@grge.mail"], ["created_at", "2020-12-30 02:00:36.230107"], ["updated_at", "2020-12-30 02:00:36.230107"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Trinity"], ["email", "t@tmail.it"], ["created_at", "2020-12-30 02:05:56.753274"], ["updated_at", "2020-12-30 02:05:56.753274"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users" for ::1 at 2020-12-29 18:21:39 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users"."name", "users"."email" FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 200 OK in 19ms (Views: 7.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/users" for ::1 at 2020-12-29 18:26:53 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users"."name", "users"."email" FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 200 OK in 21ms (Views: 9.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/users" for ::1 at 2020-12-29 18:26:58 -0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users"."name", "users"."email" FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2020-12-29 18:27:37 -0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users"."name", "users"."email" FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2020-12-29 18:28:21 -0800
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users"."name", "users"."email" FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 64801ms (Views: 6.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/users" for ::1 at 2020-12-29 18:30:22 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users"."name", "users"."email" FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 40598ms (Views: 5.1ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/users" for ::1 at 2020-12-29 19:01:41 -0800
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"------WebKitFormBoundarywbX9oXJtOWJEgtql\r\nContent-Disposition: form-data; name"=>"\"email\"\r\n\r\nmineEmail@thine.com\r\n------WebKitFormBoundarywbX9oXJtOWJEgtql\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\nSnowman\r\n------WebKitFormBoundarywbX9oXJtOWJEgtql--\r\n"}
+Started POST "/users" for ::1 at 2020-12-29 19:04:06 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"------WebKitFormBoundaryf0mMlOFeL9h0iQiF\r\nContent-Disposition: form-data; name"=>"\"email\"\r\n\r\nmineEmail@thine.com\r\n------WebKitFormBoundaryf0mMlOFeL9h0iQiF\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\nSnowman\r\n------WebKitFormBoundaryf0mMlOFeL9h0iQiF--\r\n"}
+Started POST "/users" for ::1 at 2020-12-29 19:04:56 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"------WebKitFormBoundarybx7IgGAP8B1lBqHO\r\nContent-Disposition: form-data; name"=>"\"email\"\r\n\r\nmineEmail@thine.com\r\n------WebKitFormBoundarybx7IgGAP8B1lBqHO\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\nSnowman\r\n------WebKitFormBoundarybx7IgGAP8B1lBqHO--\r\n"}
+Completed 200 OK in 19100ms (Views: 0.4ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/users" for ::1 at 2020-12-29 19:06:10 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"------WebKitFormBoundaryNPHQlrlsmshwejMj\r\nContent-Disposition: form-data; name"=>"\"email\"\r\n\r\nmineEmail@thine.com\r\n------WebKitFormBoundaryNPHQlrlsmshwejMj\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\nSnowman\r\n------WebKitFormBoundaryNPHQlrlsmshwejMj--\r\n"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:11
+Completed 422 Unprocessable Entity in 39ms (ActiveRecord: 6.9ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:07:16 -0800
+Processing by UsersController#create as */*
+  Parameters: {"------WebKitFormBoundaryP9bT1vZESFF8i9Cm\r\nContent-Disposition: form-data; name"=>"\"name\"\r\n\r\nsnowman\r\n------WebKitFormBoundaryP9bT1vZESFF8i9Cm\r\nContent-Disposition: form-data; name=\"email\"\r\n\r\nem@email.com\r\n------WebKitFormBoundaryP9bT1vZESFF8i9Cm--\r\n"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:11
+Completed 422 Unprocessable Entity in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:08:17 -0800
+Processing by UsersController#create as */*
+  Parameters: {"------WebKitFormBoundarysqkmMZHWELSha7Oz\r\nContent-Disposition: form-data; name"=>"\"name\"\r\n\r\nsnowman\r\n------WebKitFormBoundarysqkmMZHWELSha7Oz\r\nContent-Disposition: form-data; name=\"email\"\r\n\r\nem@email.com\r\n------WebKitFormBoundarysqkmMZHWELSha7Oz--\r\n"}
+Started POST "/users" for ::1 at 2020-12-29 19:17:29 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"------WebKitFormBoundaryzinoy4QNlcFDAOqN\r\nContent-Disposition: form-data; name"=>"\"name\"\r\n\r\nsnowman\r\n------WebKitFormBoundaryzinoy4QNlcFDAOqN\r\nContent-Disposition: form-data; name=\"email\"\r\n\r\nem@email.com\r\n------WebKitFormBoundaryzinoy4QNlcFDAOqN--\r\n"}
+Started POST "/users" for ::1 at 2020-12-29 19:19:06 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"Snowman", "email"=>"mine@mail.mil"}
+Started POST "/users" for ::1 at 2020-12-29 19:21:25 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"Snowman", "email"=>"mine@mail.mil"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Snowman"], ["email", "mine@mail.mil"], ["created_at", "2020-12-30 03:21:25.947675"], ["updated_at", "2020-12-30 03:21:25.947675"]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:11
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 12.7ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for ::1 at 2020-12-29 19:23:59 -0800
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"Steve_Vai", "email"=>"stevesmail@gmail.de"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Steve_Vai"], ["email", "stevesmail@gmail.de"], ["created_at", "2020-12-30 03:23:59.812733"], ["updated_at", "2020-12-30 03:23:59.812733"]]
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:11
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 6.3ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for ::1 at 2020-12-29 19:26:46 -0800
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"Yngwe_Malmsteen", "email"=>"ichschnay@yngvel.no"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:27:21 -0800
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"Yngwe_Malmsteen", "email"=>"ichschnay@yngvel.no"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:29:26 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:32:52 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Unpermitted parameters: ::name, ::email
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:11
+Completed 422 Unprocessable Entity in 14ms (ActiveRecord: 4.8ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:33:38 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Started POST "/users" for ::1 at 2020-12-29 19:36:34 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Started POST "/users" for ::1 at 2020-12-29 19:37:04 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Unpermitted parameters: ::name, ::email
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:11
+Completed 422 Unprocessable Entity in 23ms (ActiveRecord: 5.9ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Name can't be blank, Email can't be blank):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:38:03 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Started POST "/users" for ::1 at 2020-12-29 19:39:34 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 19:41:38 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Unpermitted parameters: ::name, ::email
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Yngwe_Malmsteen"], ["email", "ichschnay@yngvel.no"], ["created_at", "2020-12-30 03:41:38.395724"], ["updated_at", "2020-12-30 03:41:38.395724"]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 8.3ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for ::1 at 2020-12-29 19:48:46 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 19:52:37 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Unpermitted parameters: ::name, ::email
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  
+app/controllers/users_controller.rb:12:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:54:48 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Unpermitted parameters: ::name, ::email
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  
+app/controllers/users_controller.rb:12:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:56:12 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 19:57:49 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Yngwe_Malmsteen", ":email"=>"ichschnay@yngvel.no"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:00:59 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Eddie_Van_Halen"], ["email", "eddie@van.halen"], ["created_at", "2020-12-30 04:00:59.819543"], ["updated_at", "2020-12-30 04:00:59.819543"]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 9.4ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/users" for ::1 at 2020-12-29 20:04:41 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {":user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:05:14 -0800
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:06:11 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 5.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute ':name' for User.):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:07:00 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:07:59 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/users_controller.rb:10:in `[]'
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:09:03 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/users_controller.rb:10:in `[]'
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:10:09 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/sethschoenfeld/Desktop/aa_classwork/w6d2/routes_controllers/app/controllers/users_controller.rb:10: syntax error, unexpected tSTRING_BEG, expecting ']'
+...).permit(:user[:name][/':name/'], :user[:email][/':email/'] ...
+...                              ^
+/Users/sethschoenfeld/Desktop/aa_classwork/w6d2/routes_controllers/app/controllers/users_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+...][/':name/'], :user[:email][/':email/'] ) )
+...                              ^
+/Users/sethschoenfeld/Desktop/aa_classwork/w6d2/routes_controllers/app/controllers/users_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+... user[:name] = params[:user][':name']
+...                              ^
+/Users/sethschoenfeld/Desktop/aa_classwork/w6d2/routes_controllers/app/controllers/users_controller.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...email] = params[:user][':email']
+...                              ^
+/Users/sethschoenfeld/Desktop/aa_classwork/w6d2/routes_controllers/app/controllers/users_controller.rb:23: unterminated string meets end of file
+/Users/sethschoenfeld/Desktop/aa_classwork/w6d2/routes_controllers/app/controllers/users_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/users_controller.rb:10: syntax error, unexpected tSTRING_BEG, expecting ']'
+app/controllers/users_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+app/controllers/users_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+app/controllers/users_controller.rb:13: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/controllers/users_controller.rb:23: unterminated string meets end of file
+app/controllers/users_controller.rb:23: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/users" for ::1 at 2020-12-29 20:11:04 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/users_controller.rb:10:in `[]'
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:12:05 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:13:20 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 5.2ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute ':name' for User.):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:13:45 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:20:18 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:23:13 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:23:59 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:25:34 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/Users/sethschoenfeld/Desktop/aa_classwork/w6d2/routes_controllers/app/controllers/users_controller.rb:11: syntax error, unexpected tINTEGER, expecting keyword_do or '{' or '('
+...rrors.full_messages, status 422
+...                            ^~~):
+  
+app/controllers/users_controller.rb:11: syntax error, unexpected tINTEGER, expecting keyword_do or '{' or '('
+Started POST "/users" for ::1 at 2020-12-29 20:26:17 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Completed 500 Internal Server Error in 19ms (Views: 0.2ms | ActiveRecord: 5.7ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:26:45 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/users" for ::1 at 2020-12-29 20:28:09 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/users" for ::1 at 2020-12-29 20:29:10 -0800
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: {":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:29:48 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: {":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:30:53 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Completed 200 OK in 17ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/users" for ::1 at 2020-12-29 20:35:01 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:38:23 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:40:03 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+Started POST "/users" for ::1 at 2020-12-29 20:40:23 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Unpermitted parameters: ::name, ::email
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:14
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Eddie_Van_Halen"], ["email", "eddie@van.halen"], ["created_at", "2020-12-30 04:40:23.503078"], ["updated_at", "2020-12-30 04:40:23.503078"]]
+  ↳ app/controllers/users_controller.rb:14
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 8.5ms)
+
+
+Started POST "/users" for ::1 at 2020-12-29 20:43:57 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{":name"=>"Eddie_Van_Halen", ":email"=>"eddie@van.halen"}}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 6.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute ':name' for User.):
+  
+app/controllers/users_controller.rb:10:in `create'
+Started POST "/users" for ::1 at 2020-12-29 20:46:32 -0800
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Eddie_Van_Halen", "email"=>"eddie@van.halen"}}
+Unpermitted parameters: :name, :email

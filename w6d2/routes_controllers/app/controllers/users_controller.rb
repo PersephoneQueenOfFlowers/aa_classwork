@@ -1,10 +1,19 @@
 class UsersController < ApplicationController
   def index
-    render plain: "I'm in the index action!"
+    debugger
+    users_all = User.select(:name,:email)
+    render json: users_all
   end
 
   def create
-    render json: params
+
+    user = User.new(params.require(:user).permit( [':name'],[':email'] ) )
+   debugger
+    user[:name] = params[:user][':name']
+    user[:email] = params[:user][':email']
+    user.save!
+
+    render json: user
   end
 
   def show
