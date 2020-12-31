@@ -1,0 +1,16 @@
+<ul>
+  <% @cats.each do |cat| %>
+    <li><%= cat.name %></li>
+    <li><%= cat.color %></li>
+    <li><%= cat.sex %></li>
+    <li><%= cat.description %></li>
+    <li><%= link_to "visit #{cat} here", cat_url(cat)  %></li>
+  <% end %>
+</ul>
+
+<!---
+# t.date "birth_date", null: false
+#     t.string "color", null: false
+#     t.string "name", null: false
+#     t.string "sex", limit: 1, null: false
+#     t.text "description", null: false --->

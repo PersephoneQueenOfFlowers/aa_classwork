@@ -8,5 +8,7 @@ class Cat < ApplicationRecord
     #age = now - self.birth_date  
   end  
 
-  
+
 end
+
+
