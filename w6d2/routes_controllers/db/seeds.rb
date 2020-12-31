@@ -26,7 +26,7 @@ ActiveRecord::Base.transaction do
     username: "donald"
   )
 
-    jim = User.create(
+  jim = User.create(
     id: rand_id,
     username: "jim"
   )
@@ -57,12 +57,18 @@ ActiveRecord::Base.transaction do
     artist_id: rand_id
   )
 
-    the_scream = Artwork.create(
+  the_scream = Artwork.create(
     id: rand_id,
     title: "The Scream",
     image_url: "https://i.etsystatic.com/11055184/r/il/eab649/2051882189/il_1588xN.2051882189_dxfp.jpg",
     artist_id: rand_id
   )
+
+  jeff_viewing = ArtworkShare.create(
+    viewer_id: User.select(:id).where(username: "jefe"),
+    artwork_id: Artwork.select(:id).where(title: "The Scream")
+  )
+
 
 end
 

@@ -10,7 +10,7 @@ class Artwork < ApplicationRecord
     class_name: :User
 
   has_many :artwork_shares,
-     primary_key: :id,
+    primary_key: :id,
     foreign_key: :artwork_id,
     class_name: :ArtworkShare  
 
