@@ -13,4 +13,5 @@ class Artwork < ApplicationRecord
      primary_key: :id,
     foreign_key: :artwork_id,
     class_name: :ArtworkShare  
+
 end

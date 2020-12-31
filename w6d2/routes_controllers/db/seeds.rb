@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 def rand_id
   rand(1..100_000)
 end
@@ -64,5 +65,4 @@ ActiveRecord::Base.transaction do
   )
 
 end
-
 
