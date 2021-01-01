@@ -8,4 +8,8 @@ class CatsController < ApplicationController
       @cat = Cat.find_by(id: params[:id])
       render :show       
     end
+
+    def new
+        render :create
+    end
 end
