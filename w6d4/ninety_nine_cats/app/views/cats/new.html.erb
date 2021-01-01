@@ -11,11 +11,17 @@
       <% end %>
     </select><br>
     <label for="birth_date">Birthdate: (format XXXX-XX-XX)</label><br>
-    <input type="text" id="birth_date" name="cat[birth_date]" value="<%= cat.birth_date %>"><br>
+    <input type="date" id="birth_date" name="cat[birth_date]" value="<%= cat.birth_date %>"><br>
     <label for="description">Description:</label><br>
     <input type="text-area" id="description" name="cat[description]" value="<%= cat.description %>"><br>
     <label for="sex">Sex:</label><br>
-    <input type="text" id="sex" name="cat[sex]" value="<%= cat.sex %>"><br><br>
+
+    <input type="radio" id="male" name="cat[sex]" value="M">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="cat[sex]" value="F">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="cat[sex]" value="O">
+    <label for="other">Other</label><br><br>
     <input type="submit" value="Submit">
   </fieldset>
 </form>
