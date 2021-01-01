@@ -1,5 +1,5 @@
 class Cat < ApplicationRecord
-  COLORS = [:orange, :grey, :blue, :tabby, :white, :black]
+  @COLORS = [:orange, :grey, :blue, :tabby, :white, :black]
 
   validates :color, presence: true
 

@@ -2,6 +2,18 @@
 
 <%= form.text_field :name %>
 
+<%= form.text_field :color %>
+
+<%= select_tag "color", options_for_select([@COLORS]) %>
+
+<%= form.date_field :birth_date %>
+<%= form.radio_button :sex, "M" %>
+<%= form.label :male, "I'm a guy'" %>
+<%= form.radio_button :age, "F" %>
+<%= form.label :F, "I'm a lady!'" %>
+
 <%= form.submit "Create" %>
 
 <% end %>
+
+
