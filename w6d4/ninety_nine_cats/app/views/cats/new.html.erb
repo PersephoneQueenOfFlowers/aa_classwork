@@ -1,0 +1,23 @@
+<form action="/cats" method="POST">
+  <% cat = @cat  %>
+  <fieldset>
+    <legend>New Cat:</legend>
+    <label for="name">name:</label><br>
+    <input type="text" id="name" name="cat[name]" value="<%= cat.name %>"><br>
+    <label for="color">color:</label><br>
+    <select id="color" name="cat[color]" size="COLORS.length" style="min-width:250px">
+      <% StaticData::COLORS.each_with_index do |color,idx|  %>
+      <option value="<%= color %>"> <%=color%></option> 
+      <% end %>
+    </select><br>
+    <label for="birth_date">Birthdate: (format XXXX-XX-XX)</label><br>
+    <input type="text" id="birth_date" name="cat[birth_date]" value="<%= cat.birth_date %>"><br>
+    <label for="description">Description:</label><br>
+    <input type="text-area" id="description" name="cat[description]" value="<%= cat.description %>"><br>
+    <label for="sex">Sex:</label><br>
+    <input type="text" id="sex" name="cat[sex]" value="<%= cat.sex %>"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+
