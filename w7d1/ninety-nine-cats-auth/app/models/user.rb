@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  validates :session_token uniqueness: true, presence: true 
+  validates :session_token, uniqueness: true, presence: true 
 
   after_initialize :ensure_session_token
 
