@@ -12,9 +12,11 @@ class User < ApplicationRecord
    def password=(password)
     @password = password
     self.password_digest = BCrypt::Password.create(password)
-     
+    # we pass the password string to bcrypt and bcrypt salts and. 
   end
 
-
+  def ensure_session_token
+    self.session_token ||= SecureRandom.urlsafe_base64(16)
+  end
 
 end
