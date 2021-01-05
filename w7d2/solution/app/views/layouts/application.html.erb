@@ -31,7 +31,12 @@
     </div>
     </nav>
     <main>
+      <!-- This is where the view starts -->
       <%= yield %>
     </main>
   </body>
+  <footer>
+    &#169; KyleAndSeth Inc. 2021!
+    <%= yield :footer %>
+  </footer>
 </html>
