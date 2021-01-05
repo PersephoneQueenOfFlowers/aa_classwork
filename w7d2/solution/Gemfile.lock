@@ -83,8 +83,17 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.7)
       concurrent-ruby (~> 1.0)
+<<<<<<< HEAD
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
+=======
+    jbuilder (2.9.1)
+      activesupport (>= 4.2.0)
+    launchy (2.5.0)
+      addressable (~> 2.7)
+    letter_opener (1.7.0)
+      launchy (~> 2.2)
+>>>>>>> 75b79b41ab9de92d0bd454b7a250886beae159ea
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -203,6 +212,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   faker
   jbuilder (~> 2.5)
+  letter_opener
   listen (>= 3.0.5, < 3.2)
   pg (>= 1.0.0)
   pry-rails
