@@ -33,10 +33,9 @@ class User < ApplicationRecord
     BCrypt::Password.new(password_digest).is_password?(pw)
   end
 
-  def find_by_credentials(username, password)
+  def find_by_credentials(username, pw)
     user = User.find_by(
-      username: username,
-      password: password
+      username: username
     )
 
     if user && user.is_password?(pw)
