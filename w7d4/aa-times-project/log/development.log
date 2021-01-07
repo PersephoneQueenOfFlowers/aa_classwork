@@ -3189,3 +3189,68 @@ Processing by StaticPagesController#index as HTML
 Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-01-07 14:20:16 -0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/3c338416538d87a0/variables" for ::1 at 2021-01-07 14:20:16 -0800
+Started GET "/" for ::1 at 2021-01-07 14:22:35 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/6063ae8e05482c6b/variables" for ::1 at 2021-01-07 14:22:36 -0800
+Started GET "/" for ::1 at 2021-01-07 14:23:04 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/ec9742c937b48140/variables" for ::1 at 2021-01-07 14:23:04 -0800
+Started POST "/__better_errors/ec9742c937b48140/variables" for ::1 at 2021-01-07 14:23:59 -0800
+Started GET "/" for ::1 at 2021-01-07 14:24:42 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/532036c6d8ba662f/variables" for ::1 at 2021-01-07 14:24:42 -0800
+Started GET "/" for ::1 at 2021-01-07 14:25:48 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/55b9814a0e4dceb0/variables" for ::1 at 2021-01-07 14:25:49 -0800
+Started GET "/" for ::1 at 2021-01-07 14:25:58 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/760494462c4099fd/variables" for ::1 at 2021-01-07 14:25:58 -0800
+Started GET "/" for ::1 at 2021-01-07 14:26:02 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/46b7efe666b47522/variables" for ::1 at 2021-01-07 14:26:03 -0800
+Started GET "/" for ::1 at 2021-01-07 14:26:07 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/51f6e79d9a47a676/variables" for ::1 at 2021-01-07 14:26:08 -0800
+Started GET "/" for ::1 at 2021-01-07 14:26:10 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/baf2b9c526ef0397/variables" for ::1 at 2021-01-07 14:26:10 -0800
