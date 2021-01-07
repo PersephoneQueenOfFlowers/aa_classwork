@@ -40,11 +40,19 @@
 	font-size: 11px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-
 	li {
 		margin-left: 10px;
-    border-right: 1px solid $light-gray;
-    padding: 0 5px;
+		border-right: 1px solid $light-gray;
+		padding: 0 5px;
+	}
+	ul {
+		display: flex;
+		li:last-child {
+			border-right: none;
+		}
+		.video:before{
+			content: url('/assets/video-64x64.png');
+		}
 	}
 
 	button {
@@ -73,3 +81,4 @@
 		color: green;
 	}
 }
+
