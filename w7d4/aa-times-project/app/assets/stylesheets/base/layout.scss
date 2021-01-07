@@ -7,20 +7,31 @@ html {
 
 body {
 	// ...
+
 }
 
+.hidden {
+	display: none;
+}
+
+
 button {
-	// background-color:
-	// border-color:
-	// color:
-	// font-weight:
-	// padding:
-	// border-radius:
+	background-color: #6688a3;
+	border-color: #607e95;
+	color: #FFF;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 8px 15px;
+
+	border-radius: 2px;
 	// transition:
 	// font-family:
 	// text-transform:
-	// font-size:
+	font-size: .75rem;
 	// text-align:
+			&:last-child {
+				margin: 0 2px;
+			}
 }
 
 button:hover {
