@@ -350,3 +350,1887 @@ Started GET "/assets/application.self-0fc2f50328fb06633464700235588be76e3c503bbc
 Started GET "/assets/application.self-0fc2f50328fb06633464700235588be76e3c503bbc8f405a4b706e06b6ce2804.css?body=1&livereload=1610043452120&livereload=1610042817620" for ::1 at 2021-01-07 10:17:32 -0800
 Started GET "/assets/application.self-0fc2f50328fb06633464700235588be76e3c503bbc8f405a4b706e06b6ce2804.css?body=1&livereload=1610043453134&livereload=1610042817620" for ::1 at 2021-01-07 10:17:33 -0800
 Started GET "/assets/application.self-0fc2f50328fb06633464700235588be76e3c503bbc8f405a4b706e06b6ce2804.css?body=1&livereload=1610043453173&livereload=1610042817620" for ::1 at 2021-01-07 10:17:33 -0800
+Started GET "/" for ::1 at 2021-01-07 10:20:56 -0800
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/sethschoenfeld/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.7ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 849ms (Views: 845.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:20:57 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:20:57 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:20:57 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:20:57 -0800
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:20:57 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:20:58 -0800
+Started GET "/" for ::1 at 2021-01-07 10:36:34 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.6ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 58ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:36:35 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:36:35 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:36:35 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:36:35 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:36:35 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:36:35 -0800
+Started GET "/" for ::1 at 2021-01-07 10:36:36 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (1.1ms)
+  Rendered shared/_masthead.html.erb (0.7ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:36:36 -0800
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:36:36 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:36:36 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:36:36 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:36:36 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:36:36 -0800
+Started GET "/" for ::1 at 2021-01-07 10:36:45 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:36:46 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:36:46 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:36:46 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:36:46 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:36:46 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:36:46 -0800
+Started GET "/" for ::1 at 2021-01-07 10:36:49 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:36:50 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:36:50 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:36:50 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:36:50 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:36:50 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:36:50 -0800
+Started GET "/" for ::1 at 2021-01-07 10:36:54 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.6ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:36:54 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:36:54 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:36:54 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:36:54 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:36:54 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:36:54 -0800
+Started GET "/" for ::1 at 2021-01-07 10:36:58 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 66ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:36:58 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:36:58 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:36:59 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:36:59 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:36:59 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:36:59 -0800
+Started GET "/" for ::1 at 2021-01-07 10:37:01 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.9ms)
+  Rendered static_pages/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 68ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:37:01 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:37:02 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:37:02 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:37:02 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:37:02 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:37:02 -0800
+Started GET "/" for ::1 at 2021-01-07 10:38:26 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.6ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 86ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:38:26 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:38:26 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:38:26 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:38:26 -0800
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:38:26 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:38:26 -0800
+Started GET "/" for ::1 at 2021-01-07 10:38:28 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.9ms)
+  Rendered shared/_sections_nav.html.erb (0.7ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_main_content.html.erb (0.6ms)
+  Rendered static_pages/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:38:29 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:38:29 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:38:29 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:38:29 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:38:29 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:38:29 -0800
+Started GET "/" for ::1 at 2021-01-07 10:38:32 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.2ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:38:33 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:38:33 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:38:33 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:38:33 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:38:33 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:38:33 -0800
+Started GET "/" for ::1 at 2021-01-07 10:38:35 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.7ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.6ms)
+  Rendered shared/_search_modal.html.erb (0.7ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 70ms (Views: 64.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:38:36 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:38:36 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:38:36 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:38:36 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:38:36 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:38:36 -0800
+Started GET "/" for ::1 at 2021-01-07 10:38:36 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.7ms)
+  Rendered shared/_masthead.html.erb (0.7ms)
+  Rendered shared/_sections_nav.html.erb (0.9ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 62ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:38:37 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:38:37 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:38:37 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:38:37 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:38:37 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:38:37 -0800
+Started GET "/" for ::1 at 2021-01-07 10:38:44 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.6ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 52ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:38:44 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:38:44 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:38:44 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:38:44 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:38:44 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:38:44 -0800
+Started GET "/" for ::1 at 2021-01-07 10:38:47 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 57ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:38:47 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:38:47 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:38:47 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:38:47 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:38:47 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:38:47 -0800
+Started GET "/" for ::1 at 2021-01-07 10:40:06 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (25.1ms)
+  Rendered shared/_main_nav.html.erb (27.0ms)
+  Rendered shared/_main_nav.html.erb (28.8ms)
+  Rendered shared/_main_nav.html.erb (30.7ms)
+  Rendered shared/_main_nav.html.erb (33.2ms)
+  Rendered shared/_main_nav.html.erb (35.8ms)
+  Rendered shared/_main_nav.html.erb (37.7ms)
+  Rendered shared/_main_nav.html.erb (40.4ms)
+  Rendered shared/_main_nav.html.erb (42.4ms)
+  Rendered shared/_main_nav.html.erb (44.4ms)
+  Rendered shared/_main_nav.html.erb (46.8ms)
+  Rendered shared/_main_nav.html.erb (49.1ms)
+  Rendered shared/_main_nav.html.erb (51.6ms)
+  Rendered shared/_main_nav.html.erb (54.5ms)
+  Rendered shared/_main_nav.html.erb (57.1ms)
+  Rendered shared/_main_nav.html.erb (59.0ms)
+  Rendered shared/_main_nav.html.erb (60.9ms)
+  Rendered shared/_main_nav.html.erb (63.0ms)
+  Rendered shared/_main_nav.html.erb (65.8ms)
+  Rendered shared/_main_nav.html.erb (68.6ms)
+  Rendered shared/_main_nav.html.erb (71.8ms)
+  Rendered shared/_main_nav.html.erb (74.5ms)
+  Rendered shared/_main_nav.html.erb (77.6ms)
+  Rendered shared/_main_nav.html.erb (80.0ms)
+  Rendered shared/_main_nav.html.erb (82.0ms)
+  Rendered shared/_main_nav.html.erb (84.5ms)
+  Rendered shared/_main_nav.html.erb (86.9ms)
+  Rendered shared/_main_nav.html.erb (89.1ms)
+  Rendered shared/_main_nav.html.erb (91.2ms)
+  Rendered shared/_main_nav.html.erb (93.2ms)
+  Rendered shared/_main_nav.html.erb (95.5ms)
+  Rendered shared/_main_nav.html.erb (98.6ms)
+  Rendered shared/_main_nav.html.erb (101.1ms)
+  Rendered shared/_main_nav.html.erb (103.2ms)
+  Rendered shared/_main_nav.html.erb (105.6ms)
+  Rendered shared/_main_nav.html.erb (108.4ms)
+  Rendered shared/_main_nav.html.erb (110.8ms)
+  Rendered shared/_main_nav.html.erb (113.3ms)
+  Rendered shared/_main_nav.html.erb (115.2ms)
+  Rendered shared/_main_nav.html.erb (118.2ms)
+  Rendered shared/_main_nav.html.erb (120.3ms)
+  Rendered shared/_main_nav.html.erb (122.3ms)
+  Rendered shared/_main_nav.html.erb (124.1ms)
+  Rendered shared/_main_nav.html.erb (126.6ms)
+  Rendered shared/_main_nav.html.erb (128.8ms)
+  Rendered shared/_main_nav.html.erb (131.6ms)
+  Rendered shared/_main_nav.html.erb (133.9ms)
+  Rendered shared/_main_nav.html.erb (135.9ms)
+  Rendered shared/_main_nav.html.erb (137.9ms)
+  Rendered shared/_main_nav.html.erb (139.9ms)
+  Rendered shared/_main_nav.html.erb (142.4ms)
+  Rendered shared/_main_nav.html.erb (144.5ms)
+  Rendered shared/_main_nav.html.erb (146.5ms)
+  Rendered shared/_main_nav.html.erb (148.7ms)
+  Rendered shared/_main_nav.html.erb (150.7ms)
+  Rendered shared/_main_nav.html.erb (154.0ms)
+  Rendered shared/_main_nav.html.erb (156.5ms)
+  Rendered shared/_main_nav.html.erb (158.7ms)
+  Rendered shared/_main_nav.html.erb (161.0ms)
+  Rendered shared/_main_nav.html.erb (163.6ms)
+  Rendered shared/_main_nav.html.erb (165.4ms)
+  Rendered shared/_main_nav.html.erb (167.3ms)
+  Rendered shared/_main_nav.html.erb (169.2ms)
+  Rendered shared/_main_nav.html.erb (171.4ms)
+  Rendered shared/_main_nav.html.erb (173.5ms)
+  Rendered shared/_main_nav.html.erb (176.3ms)
+  Rendered shared/_main_nav.html.erb (178.3ms)
+  Rendered shared/_main_nav.html.erb (180.5ms)
+  Rendered shared/_main_nav.html.erb (182.7ms)
+  Rendered shared/_main_nav.html.erb (185.4ms)
+  Rendered shared/_main_nav.html.erb (187.7ms)
+  Rendered shared/_main_nav.html.erb (190.2ms)
+  Rendered shared/_main_nav.html.erb (192.2ms)
+  Rendered shared/_main_nav.html.erb (195.1ms)
+  Rendered shared/_main_nav.html.erb (198.5ms)
+  Rendered shared/_main_nav.html.erb (201.0ms)
+  Rendered shared/_main_nav.html.erb (203.9ms)
+  Rendered shared/_main_nav.html.erb (207.3ms)
+  Rendered shared/_main_nav.html.erb (210.2ms)
+  Rendered shared/_main_nav.html.erb (212.9ms)
+  Rendered shared/_main_nav.html.erb (216.9ms)
+  Rendered shared/_main_nav.html.erb (221.7ms)
+  Rendered shared/_main_nav.html.erb (223.6ms)
+  Rendered shared/_main_nav.html.erb (226.2ms)
+  Rendered shared/_main_nav.html.erb (228.7ms)
+  Rendered shared/_main_nav.html.erb (231.3ms)
+  Rendered shared/_main_nav.html.erb (234.3ms)
+  Rendered shared/_main_nav.html.erb (238.0ms)
+  Rendered shared/_main_nav.html.erb (240.3ms)
+  Rendered shared/_main_nav.html.erb (243.0ms)
+  Rendered shared/_main_nav.html.erb (245.6ms)
+  Rendered shared/_main_nav.html.erb (247.6ms)
+  Rendered shared/_main_nav.html.erb (249.5ms)
+  Rendered shared/_main_nav.html.erb (251.2ms)
+  Rendered shared/_main_nav.html.erb (253.6ms)
+  Rendered shared/_main_nav.html.erb (256.7ms)
+  Rendered shared/_main_nav.html.erb (260.2ms)
+  Rendered shared/_main_nav.html.erb (262.9ms)
+  Rendered shared/_main_nav.html.erb (265.2ms)
+  Rendered shared/_main_nav.html.erb (267.0ms)
+  Rendered shared/_main_nav.html.erb (269.8ms)
+  Rendered shared/_main_nav.html.erb (272.4ms)
+  Rendered shared/_main_nav.html.erb (274.2ms)
+  Rendered shared/_main_nav.html.erb (276.0ms)
+  Rendered shared/_main_nav.html.erb (278.1ms)
+  Rendered shared/_main_nav.html.erb (280.2ms)
+  Rendered shared/_main_nav.html.erb (282.5ms)
+  Rendered shared/_main_nav.html.erb (284.6ms)
+  Rendered shared/_main_nav.html.erb (286.7ms)
+  Rendered shared/_main_nav.html.erb (290.1ms)
+  Rendered shared/_main_nav.html.erb (293.0ms)
+  Rendered shared/_main_nav.html.erb (294.9ms)
+  Rendered shared/_main_nav.html.erb (297.0ms)
+  Rendered shared/_main_nav.html.erb (299.3ms)
+  Rendered shared/_main_nav.html.erb (301.7ms)
+  Rendered shared/_main_nav.html.erb (304.7ms)
+  Rendered shared/_main_nav.html.erb (306.7ms)
+  Rendered shared/_main_nav.html.erb (308.7ms)
+  Rendered shared/_main_nav.html.erb (310.9ms)
+  Rendered shared/_main_nav.html.erb (312.9ms)
+  Rendered shared/_main_nav.html.erb (315.1ms)
+  Rendered shared/_main_nav.html.erb (317.1ms)
+  Rendered shared/_main_nav.html.erb (319.9ms)
+  Rendered shared/_main_nav.html.erb (322.0ms)
+  Rendered shared/_main_nav.html.erb (324.8ms)
+  Rendered shared/_main_nav.html.erb (327.7ms)
+  Rendered shared/_main_nav.html.erb (329.9ms)
+  Rendered shared/_main_nav.html.erb (333.0ms)
+  Rendered shared/_main_nav.html.erb (335.1ms)
+  Rendered shared/_main_nav.html.erb (337.0ms)
+  Rendered shared/_main_nav.html.erb (338.9ms)
+  Rendered shared/_main_nav.html.erb (340.8ms)
+  Rendered shared/_main_nav.html.erb (342.8ms)
+  Rendered shared/_main_nav.html.erb (344.7ms)
+  Rendered shared/_main_nav.html.erb (347.2ms)
+  Rendered shared/_main_nav.html.erb (349.1ms)
+  Rendered shared/_main_nav.html.erb (351.4ms)
+  Rendered shared/_main_nav.html.erb (353.3ms)
+  Rendered shared/_main_nav.html.erb (355.4ms)
+  Rendered shared/_main_nav.html.erb (358.8ms)
+  Rendered shared/_main_nav.html.erb (361.8ms)
+  Rendered shared/_main_nav.html.erb (363.9ms)
+  Rendered shared/_main_nav.html.erb (367.4ms)
+  Rendered shared/_main_nav.html.erb (370.1ms)
+  Rendered shared/_main_nav.html.erb (372.2ms)
+  Rendered shared/_main_nav.html.erb (374.2ms)
+  Rendered shared/_main_nav.html.erb (377.8ms)
+  Rendered shared/_main_nav.html.erb (380.6ms)
+  Rendered shared/_main_nav.html.erb (384.0ms)
+  Rendered shared/_main_nav.html.erb (386.8ms)
+  Rendered shared/_main_nav.html.erb (388.9ms)
+  Rendered shared/_main_nav.html.erb (390.8ms)
+  Rendered shared/_main_nav.html.erb (392.8ms)
+  Rendered shared/_main_nav.html.erb (394.8ms)
+  Rendered shared/_main_nav.html.erb (397.5ms)
+  Rendered shared/_main_nav.html.erb (399.8ms)
+  Rendered shared/_main_nav.html.erb (402.0ms)
+  Rendered shared/_main_nav.html.erb (404.1ms)
+  Rendered shared/_main_nav.html.erb (406.2ms)
+  Rendered shared/_main_nav.html.erb (408.1ms)
+  Rendered shared/_main_nav.html.erb (410.0ms)
+  Rendered shared/_main_nav.html.erb (411.7ms)
+  Rendered shared/_main_nav.html.erb (413.6ms)
+  Rendered shared/_main_nav.html.erb (415.4ms)
+  Rendered shared/_main_nav.html.erb (417.4ms)
+  Rendered shared/_main_nav.html.erb (419.3ms)
+  Rendered shared/_main_nav.html.erb (422.3ms)
+  Rendered shared/_main_nav.html.erb (425.3ms)
+  Rendered shared/_main_nav.html.erb (430.3ms)
+  Rendered shared/_main_nav.html.erb (432.8ms)
+  Rendered shared/_main_nav.html.erb (434.8ms)
+  Rendered shared/_main_nav.html.erb (438.0ms)
+  Rendered shared/_main_nav.html.erb (439.8ms)
+  Rendered shared/_main_nav.html.erb (442.0ms)
+  Rendered shared/_main_nav.html.erb (444.8ms)
+  Rendered shared/_main_nav.html.erb (447.4ms)
+  Rendered shared/_main_nav.html.erb (449.5ms)
+  Rendered shared/_main_nav.html.erb (451.6ms)
+  Rendered shared/_main_nav.html.erb (454.1ms)
+  Rendered shared/_main_nav.html.erb (456.4ms)
+  Rendered shared/_main_nav.html.erb (458.7ms)
+  Rendered shared/_main_nav.html.erb (460.6ms)
+  Rendered shared/_main_nav.html.erb (462.9ms)
+  Rendered shared/_main_nav.html.erb (466.0ms)
+  Rendered shared/_main_nav.html.erb (468.9ms)
+  Rendered shared/_main_nav.html.erb (471.1ms)
+  Rendered shared/_main_nav.html.erb (473.0ms)
+  Rendered shared/_main_nav.html.erb (474.9ms)
+  Rendered shared/_main_nav.html.erb (477.1ms)
+  Rendered shared/_main_nav.html.erb (479.7ms)
+  Rendered shared/_main_nav.html.erb (483.0ms)
+  Rendered shared/_main_nav.html.erb (485.7ms)
+  Rendered shared/_main_nav.html.erb (489.2ms)
+  Rendered shared/_main_nav.html.erb (492.7ms)
+  Rendered shared/_main_nav.html.erb (496.2ms)
+  Rendered shared/_main_nav.html.erb (499.8ms)
+  Rendered shared/_main_nav.html.erb (501.8ms)
+  Rendered shared/_main_nav.html.erb (503.9ms)
+  Rendered shared/_main_nav.html.erb (506.0ms)
+  Rendered shared/_main_nav.html.erb (509.2ms)
+  Rendered shared/_main_nav.html.erb (512.4ms)
+  Rendered shared/_main_nav.html.erb (515.2ms)
+  Rendered shared/_main_nav.html.erb (518.5ms)
+  Rendered shared/_main_nav.html.erb (522.1ms)
+  Rendered shared/_main_nav.html.erb (525.5ms)
+  Rendered shared/_main_nav.html.erb (531.0ms)
+  Rendered shared/_main_nav.html.erb (534.1ms)
+  Rendered shared/_main_nav.html.erb (537.8ms)
+  Rendered shared/_main_nav.html.erb (541.7ms)
+  Rendered shared/_main_nav.html.erb (544.6ms)
+  Rendered shared/_main_nav.html.erb (547.3ms)
+  Rendered shared/_main_nav.html.erb (550.0ms)
+  Rendered shared/_main_nav.html.erb (553.4ms)
+  Rendered shared/_main_nav.html.erb (555.4ms)
+  Rendered shared/_main_nav.html.erb (557.5ms)
+  Rendered shared/_main_nav.html.erb (559.3ms)
+  Rendered shared/_main_nav.html.erb (561.2ms)
+  Rendered shared/_main_nav.html.erb (563.6ms)
+  Rendered shared/_main_nav.html.erb (566.8ms)
+  Rendered shared/_main_nav.html.erb (570.1ms)
+  Rendered shared/_main_nav.html.erb (574.6ms)
+  Rendered shared/_main_nav.html.erb (576.5ms)
+  Rendered shared/_main_nav.html.erb (578.4ms)
+  Rendered shared/_main_nav.html.erb (580.6ms)
+  Rendered shared/_main_nav.html.erb (583.1ms)
+  Rendered shared/_main_nav.html.erb (585.9ms)
+  Rendered shared/_main_nav.html.erb (588.4ms)
+  Rendered shared/_main_nav.html.erb (590.9ms)
+  Rendered shared/_main_nav.html.erb (593.9ms)
+  Rendered shared/_main_nav.html.erb (596.6ms)
+  Rendered shared/_main_nav.html.erb (599.4ms)
+  Rendered shared/_main_nav.html.erb (602.3ms)
+  Rendered shared/_main_nav.html.erb (605.2ms)
+  Rendered shared/_main_nav.html.erb (608.2ms)
+  Rendered shared/_main_nav.html.erb (611.5ms)
+  Rendered shared/_main_nav.html.erb (614.4ms)
+  Rendered shared/_main_nav.html.erb (618.0ms)
+  Rendered shared/_main_nav.html.erb (621.5ms)
+  Rendered shared/_main_nav.html.erb (624.3ms)
+  Rendered shared/_main_nav.html.erb (627.3ms)
+  Rendered shared/_main_nav.html.erb (629.9ms)
+  Rendered shared/_main_nav.html.erb (632.3ms)
+  Rendered shared/_main_nav.html.erb (634.8ms)
+  Rendered shared/_main_nav.html.erb (637.7ms)
+  Rendered shared/_main_nav.html.erb (640.9ms)
+  Rendered shared/_main_nav.html.erb (643.2ms)
+  Rendered shared/_main_nav.html.erb (645.4ms)
+  Rendered shared/_main_nav.html.erb (647.6ms)
+  Rendered shared/_main_nav.html.erb (649.9ms)
+  Rendered shared/_main_nav.html.erb (653.5ms)
+  Rendered shared/_main_nav.html.erb (656.0ms)
+  Rendered shared/_main_nav.html.erb (658.3ms)
+  Rendered shared/_main_nav.html.erb (660.7ms)
+  Rendered shared/_main_nav.html.erb (663.6ms)
+  Rendered shared/_main_nav.html.erb (665.8ms)
+  Rendered shared/_main_nav.html.erb (676.1ms)
+  Rendered shared/_main_nav.html.erb (678.4ms)
+  Rendered shared/_main_nav.html.erb (680.3ms)
+  Rendered shared/_main_nav.html.erb (682.2ms)
+  Rendered shared/_main_nav.html.erb (685.1ms)
+  Rendered shared/_main_nav.html.erb (687.9ms)
+  Rendered shared/_main_nav.html.erb (691.1ms)
+  Rendered shared/_main_nav.html.erb (694.7ms)
+  Rendered shared/_main_nav.html.erb (698.2ms)
+  Rendered shared/_main_nav.html.erb (701.7ms)
+  Rendered shared/_main_nav.html.erb (704.8ms)
+  Rendered shared/_main_nav.html.erb (707.1ms)
+  Rendered shared/_main_nav.html.erb (709.7ms)
+  Rendered shared/_main_nav.html.erb (711.6ms)
+  Rendered shared/_main_nav.html.erb (713.7ms)
+  Rendered shared/_main_nav.html.erb (716.0ms)
+  Rendered shared/_main_nav.html.erb (718.4ms)
+  Rendered shared/_main_nav.html.erb (720.4ms)
+  Rendered shared/_main_nav.html.erb (722.9ms)
+  Rendered shared/_main_nav.html.erb (726.1ms)
+  Rendered shared/_main_nav.html.erb (729.0ms)
+  Rendered shared/_main_nav.html.erb (731.6ms)
+  Rendered shared/_main_nav.html.erb (733.6ms)
+  Rendered shared/_main_nav.html.erb (735.6ms)
+  Rendered shared/_main_nav.html.erb (737.9ms)
+  Rendered shared/_main_nav.html.erb (741.1ms)
+  Rendered shared/_main_nav.html.erb (743.6ms)
+  Rendered shared/_main_nav.html.erb (747.0ms)
+  Rendered shared/_main_nav.html.erb (749.5ms)
+  Rendered shared/_main_nav.html.erb (752.2ms)
+  Rendered shared/_main_nav.html.erb (754.6ms)
+  Rendered shared/_main_nav.html.erb (757.4ms)
+  Rendered shared/_main_nav.html.erb (760.6ms)
+  Rendered shared/_main_nav.html.erb (762.9ms)
+  Rendered shared/_main_nav.html.erb (765.9ms)
+  Rendered shared/_main_nav.html.erb (767.8ms)
+  Rendered shared/_main_nav.html.erb (770.4ms)
+  Rendered shared/_main_nav.html.erb (772.6ms)
+  Rendered shared/_main_nav.html.erb (775.9ms)
+  Rendered shared/_main_nav.html.erb (779.5ms)
+  Rendered shared/_main_nav.html.erb (782.1ms)
+  Rendered shared/_main_nav.html.erb (783.9ms)
+  Rendered shared/_main_nav.html.erb (786.0ms)
+  Rendered shared/_main_nav.html.erb (788.0ms)
+  Rendered shared/_main_nav.html.erb (789.9ms)
+  Rendered shared/_main_nav.html.erb (792.6ms)
+  Rendered shared/_main_nav.html.erb (795.6ms)
+  Rendered shared/_main_nav.html.erb (797.6ms)
+  Rendered shared/_main_nav.html.erb (800.2ms)
+  Rendered shared/_main_nav.html.erb (802.7ms)
+  Rendered shared/_main_nav.html.erb (805.1ms)
+  Rendered shared/_main_nav.html.erb (807.8ms)
+  Rendered shared/_main_nav.html.erb (811.2ms)
+  Rendered shared/_main_nav.html.erb (813.9ms)
+  Rendered shared/_main_nav.html.erb (816.6ms)
+  Rendered shared/_main_nav.html.erb (818.7ms)
+  Rendered shared/_main_nav.html.erb (820.6ms)
+  Rendered shared/_main_nav.html.erb (822.9ms)
+  Rendered shared/_main_nav.html.erb (825.3ms)
+  Rendered shared/_main_nav.html.erb (827.7ms)
+  Rendered shared/_main_nav.html.erb (830.0ms)
+  Rendered shared/_main_nav.html.erb (832.3ms)
+  Rendered shared/_main_nav.html.erb (835.0ms)
+  Rendered shared/_main_nav.html.erb (837.4ms)
+  Rendered shared/_main_nav.html.erb (839.6ms)
+  Rendered shared/_main_nav.html.erb (842.3ms)
+  Rendered shared/_main_nav.html.erb (844.6ms)
+  Rendered shared/_main_nav.html.erb (846.6ms)
+  Rendered shared/_main_nav.html.erb (848.9ms)
+  Rendered shared/_main_nav.html.erb (852.3ms)
+  Rendered shared/_main_nav.html.erb (855.8ms)
+  Rendered shared/_main_nav.html.erb (858.8ms)
+  Rendered shared/_main_nav.html.erb (863.1ms)
+  Rendered shared/_main_nav.html.erb (866.2ms)
+  Rendered shared/_main_nav.html.erb (868.7ms)
+  Rendered shared/_main_nav.html.erb (870.6ms)
+  Rendered shared/_main_nav.html.erb (872.6ms)
+  Rendered shared/_main_nav.html.erb (874.7ms)
+  Rendered shared/_main_nav.html.erb (877.3ms)
+  Rendered shared/_main_nav.html.erb (879.5ms)
+  Rendered shared/_main_nav.html.erb (881.9ms)
+  Rendered shared/_main_nav.html.erb (885.2ms)
+  Rendered shared/_main_nav.html.erb (887.9ms)
+  Rendered shared/_main_nav.html.erb (889.9ms)
+  Rendered shared/_main_nav.html.erb (893.1ms)
+  Rendered shared/_main_nav.html.erb (896.9ms)
+  Rendered shared/_main_nav.html.erb (899.4ms)
+  Rendered shared/_main_nav.html.erb (901.7ms)
+  Rendered shared/_main_nav.html.erb (904.9ms)
+  Rendered shared/_main_nav.html.erb (907.2ms)
+  Rendered shared/_main_nav.html.erb (910.4ms)
+  Rendered shared/_main_nav.html.erb (913.2ms)
+  Rendered shared/_main_nav.html.erb (915.4ms)
+  Rendered shared/_main_nav.html.erb (917.9ms)
+  Rendered shared/_main_nav.html.erb (920.8ms)
+  Rendered shared/_main_nav.html.erb (923.1ms)
+  Rendered shared/_main_nav.html.erb (925.4ms)
+  Rendered shared/_main_nav.html.erb (929.0ms)
+  Rendered shared/_main_nav.html.erb (932.7ms)
+  Rendered shared/_main_nav.html.erb (935.1ms)
+  Rendered shared/_main_nav.html.erb (937.6ms)
+  Rendered shared/_main_nav.html.erb (939.6ms)
+  Rendered shared/_main_nav.html.erb (941.8ms)
+  Rendered shared/_main_nav.html.erb (944.1ms)
+  Rendered shared/_main_nav.html.erb (946.9ms)
+  Rendered shared/_main_nav.html.erb (949.2ms)
+  Rendered shared/_main_nav.html.erb (952.3ms)
+  Rendered shared/_main_nav.html.erb (954.7ms)
+  Rendered shared/_main_nav.html.erb (956.6ms)
+  Rendered shared/_main_nav.html.erb (958.6ms)
+  Rendered shared/_main_nav.html.erb (960.5ms)
+  Rendered shared/_main_nav.html.erb (962.6ms)
+  Rendered shared/_main_nav.html.erb (965.2ms)
+  Rendered shared/_main_nav.html.erb (968.0ms)
+  Rendered shared/_main_nav.html.erb (970.7ms)
+  Rendered shared/_main_nav.html.erb (973.4ms)
+  Rendered shared/_main_nav.html.erb (975.3ms)
+  Rendered shared/_main_nav.html.erb (977.3ms)
+  Rendered shared/_main_nav.html.erb (980.7ms)
+  Rendered shared/_main_nav.html.erb (983.8ms)
+  Rendered shared/_main_nav.html.erb (987.3ms)
+  Rendered shared/_main_nav.html.erb (989.4ms)
+  Rendered shared/_main_nav.html.erb (991.4ms)
+  Rendered shared/_main_nav.html.erb (993.5ms)
+  Rendered shared/_main_nav.html.erb (995.8ms)
+  Rendered shared/_main_nav.html.erb (998.2ms)
+  Rendered shared/_main_nav.html.erb (1000.6ms)
+  Rendered shared/_main_nav.html.erb (1002.5ms)
+  Rendered shared/_main_nav.html.erb (1004.7ms)
+  Rendered shared/_main_nav.html.erb (1006.7ms)
+  Rendered shared/_main_nav.html.erb (1008.7ms)
+  Rendered shared/_main_nav.html.erb (1010.6ms)
+  Rendered shared/_main_nav.html.erb (1012.4ms)
+  Rendered shared/_main_nav.html.erb (1014.2ms)
+  Rendered shared/_main_nav.html.erb (1016.2ms)
+  Rendered shared/_main_nav.html.erb (1018.3ms)
+  Rendered shared/_main_nav.html.erb (1020.4ms)
+  Rendered shared/_main_nav.html.erb (1024.2ms)
+  Rendered shared/_main_nav.html.erb (1027.3ms)
+  Rendered shared/_main_nav.html.erb (1031.2ms)
+  Rendered shared/_main_nav.html.erb (1034.1ms)
+  Rendered shared/_main_nav.html.erb (1036.5ms)
+  Rendered shared/_main_nav.html.erb (1038.6ms)
+  Rendered shared/_main_nav.html.erb (1040.7ms)
+  Rendered shared/_main_nav.html.erb (1042.7ms)
+  Rendered shared/_main_nav.html.erb (1044.5ms)
+  Rendered shared/_main_nav.html.erb (1046.3ms)
+  Rendered shared/_main_nav.html.erb (1048.3ms)
+  Rendered shared/_main_nav.html.erb (1050.7ms)
+  Rendered shared/_main_nav.html.erb (1053.0ms)
+  Rendered shared/_main_nav.html.erb (1055.0ms)
+  Rendered shared/_main_nav.html.erb (1057.6ms)
+  Rendered shared/_main_nav.html.erb (1060.2ms)
+  Rendered shared/_main_nav.html.erb (1063.2ms)
+  Rendered shared/_main_nav.html.erb (1065.6ms)
+  Rendered shared/_main_nav.html.erb (1067.8ms)
+  Rendered shared/_main_nav.html.erb (1070.7ms)
+  Rendered shared/_main_nav.html.erb (1073.0ms)
+  Rendered shared/_main_nav.html.erb (1074.9ms)
+  Rendered shared/_main_nav.html.erb (1076.8ms)
+  Rendered shared/_main_nav.html.erb (1078.7ms)
+  Rendered shared/_main_nav.html.erb (1080.7ms)
+  Rendered shared/_main_nav.html.erb (1083.2ms)
+  Rendered shared/_main_nav.html.erb (1085.2ms)
+  Rendered shared/_main_nav.html.erb (1087.2ms)
+  Rendered shared/_main_nav.html.erb (1089.4ms)
+  Rendered shared/_main_nav.html.erb (1092.3ms)
+  Rendered shared/_main_nav.html.erb (1094.9ms)
+  Rendered shared/_main_nav.html.erb (1096.6ms)
+  Rendered shared/_main_nav.html.erb (1098.4ms)
+  Rendered shared/_main_nav.html.erb (1100.1ms)
+  Rendered shared/_main_nav.html.erb (1102.4ms)
+  Rendered shared/_main_nav.html.erb (1104.9ms)
+  Rendered shared/_main_nav.html.erb (1107.2ms)
+  Rendered shared/_main_nav.html.erb (1109.4ms)
+  Rendered shared/_main_nav.html.erb (1111.9ms)
+  Rendered shared/_main_nav.html.erb (1113.9ms)
+  Rendered shared/_main_nav.html.erb (1115.8ms)
+  Rendered shared/_main_nav.html.erb (1117.7ms)
+  Rendered shared/_main_nav.html.erb (1119.8ms)
+  Rendered shared/_main_nav.html.erb (1121.8ms)
+  Rendered shared/_main_nav.html.erb (1124.1ms)
+  Rendered shared/_main_nav.html.erb (1126.7ms)
+  Rendered shared/_main_nav.html.erb (1129.5ms)
+  Rendered shared/_main_nav.html.erb (1131.5ms)
+  Rendered shared/_main_nav.html.erb (1134.1ms)
+  Rendered shared/_main_nav.html.erb (1136.2ms)
+  Rendered shared/_main_nav.html.erb (1138.9ms)
+  Rendered shared/_main_nav.html.erb (1140.9ms)
+  Rendered shared/_main_nav.html.erb (1142.9ms)
+  Rendered shared/_main_nav.html.erb (1144.8ms)
+  Rendered shared/_main_nav.html.erb (1146.8ms)
+  Rendered shared/_main_nav.html.erb (1149.2ms)
+  Rendered shared/_main_nav.html.erb (1151.2ms)
+  Rendered shared/_main_nav.html.erb (1153.2ms)
+  Rendered shared/_main_nav.html.erb (1155.3ms)
+  Rendered shared/_main_nav.html.erb (1157.9ms)
+  Rendered shared/_main_nav.html.erb (1161.0ms)
+  Rendered shared/_main_nav.html.erb (1163.1ms)
+  Rendered shared/_main_nav.html.erb (1165.0ms)
+  Rendered shared/_main_nav.html.erb (1167.1ms)
+  Rendered shared/_main_nav.html.erb (1169.7ms)
+  Rendered shared/_main_nav.html.erb (1172.9ms)
+  Rendered shared/_main_nav.html.erb (1175.3ms)
+  Rendered shared/_main_nav.html.erb (1177.3ms)
+  Rendered shared/_main_nav.html.erb (1179.7ms)
+  Rendered shared/_main_nav.html.erb (1181.6ms)
+  Rendered shared/_main_nav.html.erb (1183.5ms)
+  Rendered shared/_main_nav.html.erb (1185.4ms)
+  Rendered shared/_main_nav.html.erb (1188.3ms)
+  Rendered shared/_main_nav.html.erb (1191.2ms)
+  Rendered shared/_main_nav.html.erb (1193.6ms)
+  Rendered shared/_main_nav.html.erb (1196.0ms)
+  Rendered shared/_main_nav.html.erb (1198.3ms)
+  Rendered shared/_main_nav.html.erb (1200.6ms)
+  Rendered shared/_main_nav.html.erb (1203.1ms)
+  Rendered shared/_main_nav.html.erb (1206.3ms)
+  Rendered shared/_main_nav.html.erb (1208.6ms)
+  Rendered shared/_main_nav.html.erb (1210.8ms)
+  Rendered shared/_main_nav.html.erb (1213.5ms)
+  Rendered shared/_main_nav.html.erb (1215.7ms)
+  Rendered shared/_main_nav.html.erb (1217.6ms)
+  Rendered shared/_main_nav.html.erb (1219.6ms)
+  Rendered shared/_main_nav.html.erb (1221.9ms)
+  Rendered shared/_main_nav.html.erb (1224.6ms)
+  Rendered shared/_main_nav.html.erb (1226.5ms)
+  Rendered shared/_main_nav.html.erb (1228.6ms)
+  Rendered shared/_main_nav.html.erb (1230.8ms)
+  Rendered shared/_main_nav.html.erb (1232.9ms)
+  Rendered shared/_main_nav.html.erb (1236.7ms)
+  Rendered shared/_main_nav.html.erb (1240.3ms)
+  Rendered shared/_main_nav.html.erb (1243.4ms)
+  Rendered shared/_main_nav.html.erb (1245.4ms)
+  Rendered shared/_main_nav.html.erb (1247.8ms)
+  Rendered shared/_main_nav.html.erb (1249.8ms)
+  Rendered shared/_main_nav.html.erb (1251.8ms)
+  Rendered shared/_main_nav.html.erb (1254.2ms)
+  Rendered shared/_main_nav.html.erb (1257.2ms)
+  Rendered shared/_main_nav.html.erb (1259.9ms)
+  Rendered shared/_main_nav.html.erb (1262.5ms)
+  Rendered shared/_main_nav.html.erb (1265.4ms)
+  Rendered shared/_main_nav.html.erb (1268.6ms)
+  Rendered shared/_main_nav.html.erb (1271.6ms)
+  Rendered shared/_main_nav.html.erb (1274.5ms)
+  Rendered shared/_main_nav.html.erb (1277.9ms)
+  Rendered shared/_main_nav.html.erb (1279.9ms)
+  Rendered shared/_main_nav.html.erb (1282.5ms)
+  Rendered shared/_main_nav.html.erb (1284.5ms)
+  Rendered shared/_main_nav.html.erb (1287.0ms)
+  Rendered shared/_main_nav.html.erb (1291.1ms)
+  Rendered shared/_main_nav.html.erb (1293.7ms)
+  Rendered shared/_main_nav.html.erb (1296.1ms)
+  Rendered shared/_main_nav.html.erb (1299.4ms)
+  Rendered shared/_main_nav.html.erb (1303.2ms)
+  Rendered shared/_main_nav.html.erb (1306.2ms)
+  Rendered shared/_main_nav.html.erb (1308.2ms)
+  Rendered shared/_main_nav.html.erb (1310.9ms)
+  Rendered shared/_main_nav.html.erb (1313.4ms)
+  Rendered shared/_main_nav.html.erb (1315.9ms)
+  Rendered shared/_main_nav.html.erb (1318.5ms)
+  Rendered shared/_main_nav.html.erb (1320.6ms)
+  Rendered shared/_main_nav.html.erb (1322.6ms)
+  Rendered shared/_main_nav.html.erb (1324.8ms)
+  Rendered shared/_main_nav.html.erb (1327.3ms)
+  Rendered shared/_main_nav.html.erb (1329.3ms)
+  Rendered shared/_main_nav.html.erb (1331.8ms)
+  Rendered shared/_main_nav.html.erb (1335.1ms)
+  Rendered shared/_main_nav.html.erb (1338.7ms)
+  Rendered shared/_main_nav.html.erb (1340.9ms)
+  Rendered shared/_main_nav.html.erb (1343.0ms)
+  Rendered shared/_main_nav.html.erb (1345.6ms)
+  Rendered shared/_main_nav.html.erb (1348.4ms)
+  Rendered shared/_main_nav.html.erb (1350.4ms)
+  Rendered shared/_main_nav.html.erb (1352.6ms)
+  Rendered shared/_main_nav.html.erb (1354.8ms)
+  Rendered shared/_main_nav.html.erb (1357.5ms)
+  Rendered shared/_main_nav.html.erb (1360.6ms)
+  Rendered shared/_main_nav.html.erb (1363.1ms)
+  Rendered shared/_main_nav.html.erb (1367.3ms)
+  Rendered shared/_main_nav.html.erb (1369.9ms)
+  Rendered shared/_main_nav.html.erb (1371.9ms)
+  Rendered shared/_main_nav.html.erb (1373.8ms)
+  Rendered shared/_main_nav.html.erb (1375.9ms)
+  Rendered shared/_main_nav.html.erb (1378.2ms)
+  Rendered shared/_main_nav.html.erb (1381.2ms)
+  Rendered shared/_main_nav.html.erb (1383.6ms)
+  Rendered shared/_main_nav.html.erb (1386.3ms)
+  Rendered shared/_main_nav.html.erb (1388.3ms)
+  Rendered shared/_main_nav.html.erb (1390.4ms)
+  Rendered shared/_main_nav.html.erb (1392.9ms)
+  Rendered shared/_main_nav.html.erb (1395.6ms)
+  Rendered shared/_main_nav.html.erb (1399.2ms)
+  Rendered shared/_main_nav.html.erb (1403.9ms)
+  Rendered shared/_main_nav.html.erb (1405.8ms)
+  Rendered shared/_main_nav.html.erb (1407.7ms)
+  Rendered shared/_main_nav.html.erb (1409.8ms)
+  Rendered shared/_main_nav.html.erb (1412.5ms)
+  Rendered shared/_main_nav.html.erb (1415.7ms)
+  Rendered shared/_main_nav.html.erb (1417.6ms)
+  Rendered shared/_main_nav.html.erb (1419.8ms)
+  Rendered shared/_main_nav.html.erb (1422.1ms)
+  Rendered shared/_main_nav.html.erb (1424.1ms)
+  Rendered shared/_main_nav.html.erb (1426.0ms)
+  Rendered shared/_main_nav.html.erb (1428.0ms)
+  Rendered shared/_main_nav.html.erb (1430.7ms)
+  Rendered shared/_main_nav.html.erb (1434.0ms)
+  Rendered shared/_main_nav.html.erb (1437.1ms)
+  Rendered shared/_main_nav.html.erb (1440.0ms)
+  Rendered shared/_main_nav.html.erb (1442.2ms)
+  Rendered shared/_main_nav.html.erb (1445.0ms)
+  Rendered shared/_main_nav.html.erb (1447.0ms)
+  Rendered shared/_main_nav.html.erb (1449.1ms)
+  Rendered shared/_main_nav.html.erb (1451.0ms)
+  Rendered shared/_main_nav.html.erb (1453.0ms)
+  Rendered shared/_main_nav.html.erb (1455.0ms)
+  Rendered shared/_main_nav.html.erb (1457.1ms)
+  Rendered shared/_main_nav.html.erb (1459.2ms)
+  Rendered shared/_main_nav.html.erb (1461.6ms)
+  Rendered shared/_main_nav.html.erb (1466.8ms)
+  Rendered shared/_main_nav.html.erb (1469.1ms)
+  Rendered shared/_main_nav.html.erb (1472.0ms)
+  Rendered shared/_main_nav.html.erb (1474.7ms)
+  Rendered shared/_main_nav.html.erb (1478.1ms)
+  Rendered shared/_main_nav.html.erb (1480.9ms)
+  Rendered shared/_main_nav.html.erb (1483.6ms)
+  Rendered shared/_main_nav.html.erb (1486.4ms)
+  Rendered shared/_main_nav.html.erb (1489.3ms)
+  Rendered shared/_main_nav.html.erb (1491.3ms)
+  Rendered shared/_main_nav.html.erb (1493.3ms)
+  Rendered shared/_main_nav.html.erb (1496.0ms)
+  Rendered shared/_main_nav.html.erb (1498.3ms)
+  Rendered shared/_main_nav.html.erb (1500.7ms)
+  Rendered shared/_main_nav.html.erb (1503.9ms)
+  Rendered shared/_main_nav.html.erb (1506.8ms)
+  Rendered shared/_main_nav.html.erb (1509.3ms)
+  Rendered shared/_main_nav.html.erb (1512.0ms)
+  Rendered shared/_main_nav.html.erb (1514.8ms)
+  Rendered shared/_main_nav.html.erb (1517.0ms)
+  Rendered shared/_main_nav.html.erb (1519.8ms)
+  Rendered shared/_main_nav.html.erb (1522.4ms)
+  Rendered shared/_main_nav.html.erb (1525.2ms)
+  Rendered shared/_main_nav.html.erb (1528.4ms)
+  Rendered shared/_main_nav.html.erb (1530.6ms)
+  Rendered shared/_main_nav.html.erb (1532.9ms)
+  Rendered shared/_main_nav.html.erb (1535.2ms)
+  Rendered shared/_main_nav.html.erb (1537.8ms)
+  Rendered shared/_main_nav.html.erb (1540.0ms)
+  Rendered shared/_main_nav.html.erb (1542.6ms)
+  Rendered shared/_main_nav.html.erb (1545.2ms)
+  Rendered shared/_main_nav.html.erb (1548.8ms)
+  Rendered shared/_main_nav.html.erb (1551.1ms)
+  Rendered shared/_main_nav.html.erb (1553.8ms)
+  Rendered shared/_main_nav.html.erb (1556.8ms)
+  Rendered shared/_main_nav.html.erb (1559.3ms)
+  Rendered shared/_main_nav.html.erb (1562.3ms)
+  Rendered shared/_main_nav.html.erb (1565.0ms)
+  Rendered shared/_main_nav.html.erb (1567.9ms)
+  Rendered shared/_main_nav.html.erb (1572.4ms)
+  Rendered shared/_main_nav.html.erb (1574.6ms)
+  Rendered shared/_main_nav.html.erb (1577.2ms)
+  Rendered shared/_main_nav.html.erb (1581.0ms)
+  Rendered shared/_main_nav.html.erb (1584.2ms)
+  Rendered shared/_main_nav.html.erb (1587.3ms)
+  Rendered shared/_main_nav.html.erb (1591.4ms)
+  Rendered shared/_main_nav.html.erb (1594.9ms)
+  Rendered shared/_main_nav.html.erb (1597.7ms)
+  Rendered shared/_main_nav.html.erb (1601.3ms)
+  Rendered shared/_main_nav.html.erb (1606.9ms)
+  Rendered shared/_main_nav.html.erb (1611.4ms)
+  Rendered shared/_main_nav.html.erb (1615.9ms)
+  Rendered shared/_main_nav.html.erb (1618.1ms)
+  Rendered shared/_main_nav.html.erb (1621.6ms)
+  Rendered shared/_main_nav.html.erb (1626.7ms)
+  Rendered shared/_main_nav.html.erb (1629.5ms)
+  Rendered shared/_main_nav.html.erb (1633.2ms)
+  Rendered shared/_main_nav.html.erb (1638.0ms)
+  Rendered shared/_main_nav.html.erb (1640.9ms)
+  Rendered shared/_main_nav.html.erb (1644.6ms)
+  Rendered shared/_main_nav.html.erb (1647.5ms)
+  Rendered shared/_main_nav.html.erb (1651.0ms)
+  Rendered shared/_main_nav.html.erb (1655.8ms)
+  Rendered shared/_main_nav.html.erb (1660.7ms)
+  Rendered shared/_main_nav.html.erb (1664.0ms)
+  Rendered shared/_main_nav.html.erb (1669.1ms)
+  Rendered shared/_main_nav.html.erb (1673.5ms)
+  Rendered shared/_main_nav.html.erb (1676.8ms)
+  Rendered shared/_main_nav.html.erb (1680.4ms)
+  Rendered shared/_main_nav.html.erb (1685.6ms)
+  Rendered shared/_main_nav.html.erb (1690.7ms)
+  Rendered shared/_main_nav.html.erb (1695.0ms)
+  Rendered shared/_main_nav.html.erb (1698.6ms)
+  Rendered shared/_main_nav.html.erb (1702.4ms)
+  Rendered shared/_main_nav.html.erb (1706.0ms)
+  Rendered shared/_main_nav.html.erb (1708.9ms)
+  Rendered shared/_main_nav.html.erb (1714.2ms)
+  Rendered shared/_main_nav.html.erb (1718.5ms)
+  Rendered shared/_main_nav.html.erb (1724.5ms)
+  Rendered shared/_main_nav.html.erb (1728.3ms)
+  Rendered shared/_main_nav.html.erb (1734.9ms)
+  Rendered static_pages/index.html.erb within layouts/application (1739.9ms)
+Completed 500 Internal Server Error in 1756ms (ActiveRecord: 0.0ms)
+
+
+
+SystemStackError - stack level too deep:
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173948722060'
+  app/views/static_pages/index.html.erb:1:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173944412660'
+
+Started GET "/" for ::1 at 2021-01-07 10:40:11 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (10.7ms)
+  Rendered static_pages/index.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `empty?' for nil:NilClass:
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173991125900'
+  app/views/static_pages/index.html.erb:1:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173953790380'
+
+Started POST "/__better_errors/3819e49a8ba77df6/variables" for ::1 at 2021-01-07 10:40:11 -0800
+Started GET "/" for ::1 at 2021-01-07 10:40:21 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (13.7ms)
+  Rendered static_pages/index.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial static_pages/_gear, application/_gear with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sethschoenfeld/Desktop/aa_classwork/w7d4/aa-times-project/app/views":
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173938161580'
+  app/views/static_pages/index.html.erb:1:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173930559740'
+
+Started POST "/__better_errors/9f815e8a232d50b7/variables" for ::1 at 2021-01-07 10:40:21 -0800
+Started GET "/" for ::1 at 2021-01-07 10:40:26 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (11.2ms)
+  Rendered static_pages/index.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial static_pages/_gear_dropdown, application/_gear_dropdown with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sethschoenfeld/Desktop/aa_classwork/w7d4/aa-times-project/app/views":
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173940450200'
+  app/views/static_pages/index.html.erb:1:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173924671560'
+
+Started POST "/__better_errors/49fd9a8688a09183/variables" for ::1 at 2021-01-07 10:40:26 -0800
+Started GET "/" for ::1 at 2021-01-07 10:41:14 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (9.8ms)
+  Rendered static_pages/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial static_pages/_gear_dropdown, application/_gear_dropdown with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sethschoenfeld/Desktop/aa_classwork/w7d4/aa-times-project/app/views":
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173945332140'
+  app/views/static_pages/index.html.erb:1:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173941323580'
+
+Started POST "/__better_errors/0e73318a8f8a7f5e/variables" for ::1 at 2021-01-07 10:41:14 -0800
+Started GET "/" for ::1 at 2021-01-07 10:41:16 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (13.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial static_pages/_gear_dropdown, application/_gear_dropdown with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sethschoenfeld/Desktop/aa_classwork/w7d4/aa-times-project/app/views":
+  app/views/shared/_main_nav.html.erb:15:in `_app_views_shared__main_nav_html_erb__3016484036684490439_70173926290940'
+  app/views/static_pages/index.html.erb:1:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173941339380'
+
+Started POST "/__better_errors/890c4d33d15ee485/variables" for ::1 at 2021-01-07 10:41:16 -0800
+Started GET "/" for ::1 at 2021-01-07 10:41:19 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.3ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.7ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 53ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:41:19 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:41:19 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:41:20 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:41:20 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:41:20 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:41:20 -0800
+Started GET "/" for ::1 at 2021-01-07 10:41:47 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_main_nav.html.erb (0.0ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.7ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:41:47 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:41:47 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:41:47 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:41:47 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:41:47 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:41:47 -0800
+Started GET "/" for ::1 at 2021-01-07 10:41:49 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial /_shared with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sethschoenfeld/Desktop/aa_classwork/w7d4/aa-times-project/app/views":
+  app/views/static_pages/index.html.erb:2:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173940114940'
+
+Started POST "/__better_errors/fcd8cbb75207d2b5/variables" for ::1 at 2021-01-07 10:41:50 -0800
+Started GET "/" for ::1 at 2021-01-07 10:41:51 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial shared/_ge with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sethschoenfeld/Desktop/aa_classwork/w7d4/aa-times-project/app/views":
+  app/views/static_pages/index.html.erb:2:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173949292620'
+
+Started POST "/__better_errors/afc5a53e1ab81ce7/variables" for ::1 at 2021-01-07 10:41:51 -0800
+Started GET "/" for ::1 at 2021-01-07 10:41:55 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_gear_dropdown.html.erb (0.3ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.2ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:41:55 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:41:55 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:41:55 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:41:55 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:41:55 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:41:55 -0800
+Started GET "/" for ::1 at 2021-01-07 10:42:32 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.3ms)
+  Rendered shared/_gear_dropdown.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.0ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 54ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:42:33 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:42:33 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:42:33 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:42:33 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:42:33 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:42:33 -0800
+Started GET "/" for ::1 at 2021-01-07 10:42:37 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_gear_dropdown.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.3ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (29.8ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial shared/_se with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sethschoenfeld/Desktop/aa_classwork/w7d4/aa-times-project/app/views":
+  app/views/static_pages/index.html.erb:6:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173990867400'
+
+Started POST "/__better_errors/b78df856da4c78ff/variables" for ::1 at 2021-01-07 10:42:37 -0800
+Started GET "/" for ::1 at 2021-01-07 10:42:39 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.6ms)
+  Rendered shared/_gear_dropdown.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.8ms)
+  Rendered shared/_sections_nav.html.erb (0.6ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (47.0ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial shared/_sections with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/sethschoenfeld/Desktop/aa_classwork/w7d4/aa-times-project/app/views":
+  app/views/static_pages/index.html.erb:6:in `_app_views_static_pages_index_html_erb___1046192008363285483_70173941204580'
+
+Started POST "/__better_errors/6798f59df4a7e704/variables" for ::1 at 2021-01-07 10:42:39 -0800
+Started GET "/" for ::1 at 2021-01-07 10:42:42 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.4ms)
+  Rendered shared/_gear_dropdown.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.8ms)
+  Rendered shared/_sections_nav.html.erb (0.7ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_sections_sidebar.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:42:42 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:42:42 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:42:42 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:42:42 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:42:42 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:42:42 -0800
+Started GET "/" for ::1 at 2021-01-07 10:42:53 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.6ms)
+  Rendered shared/_gear_dropdown.html.erb (0.4ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.3ms)
+  Rendered shared/_sections_sidebar.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 59ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:42:53 -0800
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:42:54 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:42:54 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:42:54 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:42:54 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:42:54 -0800
+Started GET "/" for ::1 at 2021-01-07 10:43:04 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.2ms)
+  Rendered shared/_gear_dropdown.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.3ms)
+  Rendered shared/_sections_nav.html.erb (0.5ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_sections_sidebar.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:43:05 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:43:05 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:43:05 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:43:05 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:43:05 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:43:05 -0800
+Started GET "/" for ::1 at 2021-01-07 10:43:10 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.3ms)
+  Rendered shared/_gear_dropdown.html.erb (0.8ms)
+  Rendered shared/_masthead.html.erb (0.4ms)
+  Rendered shared/_sections_nav.html.erb (0.7ms)
+  Rendered shared/_search_modal.html.erb (0.4ms)
+  Rendered shared/_sections_sidebar.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.4ms)
+  Rendered static_pages/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d0ea1a8cd4b3eeee1cc8a14bd1b76f83cc43a1208f80c734c4d2e595a183d05e.css?body=1" for ::1 at 2021-01-07 10:43:10 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 10:43:10 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 10:43:10 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 10:43:10 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 10:43:10 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 10:43:10 -0800
