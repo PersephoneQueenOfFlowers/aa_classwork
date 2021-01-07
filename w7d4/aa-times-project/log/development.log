@@ -3254,3 +3254,105 @@ LoadError - cannot load such file -- yahoo-weather:
   app/controllers/static_pages_controller.rb:1:in `<top (required)>'
 
 Started POST "/__better_errors/baf2b9c526ef0397/variables" for ::1 at 2021-01-07 14:26:10 -0800
+Started GET "/" for ::1 at 2021-01-07 14:27:18 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/c426519be6e49b66/variables" for ::1 at 2021-01-07 14:27:19 -0800
+Started GET "/" for ::1 at 2021-01-07 14:27:21 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/application_controller.rb:2:in `<top (required)>'
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/3166ca42ea4c216e/variables" for ::1 at 2021-01-07 14:27:22 -0800
+Started GET "/" for ::1 at 2021-01-07 14:28:18 -0800
+
+LoadError - cannot load such file -- yahoo-weather:
+  app/controllers/static_pages_controller.rb:1:in `<top (required)>'
+
+Started POST "/__better_errors/f980024fd9fab1a0/variables" for ::1 at 2021-01-07 14:28:19 -0800
+Started GET "/" for ::1 at 2021-01-07 14:28:33 -0800
+Processing by StaticPagesController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant StaticPagesController::YahooWeather:
+  app/controllers/static_pages_controller.rb:8:in `index'
+
+Started POST "/__better_errors/a7591efdc4fbd7fb/variables" for ::1 at 2021-01-07 14:28:33 -0800
+Started GET "/" for ::1 at 2021-01-07 14:28:42 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_gear_dropdown.html.erb (0.6ms)
+  Rendered shared/_masthead.html.erb (10.5ms)
+  Rendered static_pages/index.html.erb within layouts/application (25.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `title' for nil:NilClass:
+  app/views/shared/_masthead.html.erb:22:in `_app_views_shared__masthead_html_erb___2320058939396522271_70278056666780'
+  app/views/static_pages/index.html.erb:3:in `_app_views_static_pages_index_html_erb__1625005632910373928_70278072969500'
+
+Started POST "/__better_errors/59c4619ea4aa54e3/variables" for ::1 at 2021-01-07 14:28:43 -0800
+Started GET "/" for ::1 at 2021-01-07 14:28:58 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.3ms)
+  Rendered shared/_gear_dropdown.html.erb (0.6ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.7ms)
+  Rendered shared/_sections_sidebar.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 517ms (Views: 514.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9d15b0e0ac19ff6b4a739c4202c1b38a2c6045932d70c0c6531e930c5676a517.css?body=1" for ::1 at 2021-01-07 14:28:59 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 14:28:59 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 14:28:59 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 14:28:59 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 14:28:59 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 14:28:59 -0800
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-01-07 14:28:59 -0800
+Started GET "/" for ::1 at 2021-01-07 14:29:00 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_gear_dropdown.html.erb (0.7ms)
+  Rendered shared/_masthead.html.erb (0.7ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (3.7ms)
+  Rendered shared/_sections_sidebar.html.erb (0.3ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 80ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-01-07 14:29:00 -0800
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered shared/_main_nav.html.erb (0.5ms)
+  Rendered shared/_gear_dropdown.html.erb (0.5ms)
+  Rendered shared/_masthead.html.erb (0.5ms)
+  Rendered shared/_sections_nav.html.erb (0.4ms)
+  Rendered shared/_search_modal.html.erb (0.5ms)
+  Rendered shared/_sections_sidebar.html.erb (0.4ms)
+  Rendered shared/_main_content.html.erb (0.3ms)
+  Rendered static_pages/index.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 71ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9d15b0e0ac19ff6b4a739c4202c1b38a2c6045932d70c0c6531e930c5676a517.css?body=1" for ::1 at 2021-01-07 14:29:01 -0800
+Started GET "/assets/components/modal.self-52188644dbb47def5ee35ae02e69eb567ca9b664472357a8a5789dd39032a265.js?body=1" for ::1 at 2021-01-07 14:29:01 -0800
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2021-01-07 14:29:01 -0800
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2021-01-07 14:29:01 -0800
+Started GET "/assets/components/sidebar.self-2a1277f850a6fa21e1a974ef5152f177ac05516477d5081d593bb137b3d6808b.js?body=1" for ::1 at 2021-01-07 14:29:01 -0800
+Started GET "/assets/application.self-f571b9db02bf4ed04c38a6a29072ac382f7d4f47db1fab9817aeadb0d8665235.js?body=1" for ::1 at 2021-01-07 14:29:01 -0800
+Started GET "/assets/AA_Times_Logo.png" for ::1 at 2021-01-07 14:29:01 -0800
