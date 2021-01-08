@@ -12,12 +12,15 @@
     position: relative;
     li {
       padding: 5px 3px;
-    }    
+    }
+    .editions li:not(:first-child):hover, .help li:not(:first-child):hover{
+      background-color: #ebebeb;
+      a{
+        background-color: #ebebeb;
+      }
+    }
+    .help li:not(:first-child){
+           color: #5b698a;
+    }
   }  
-}
-
-.dropdown-subtitle{
-  display: inline-block;
-  padding-left: 3px;
-  padding-bottom: 5px;
 }
