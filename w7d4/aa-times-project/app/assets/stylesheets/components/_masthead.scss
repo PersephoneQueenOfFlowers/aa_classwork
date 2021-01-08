@@ -51,7 +51,14 @@
 			border-right: none;
 		}
 		.video:before{
-			content: url('/assets/video-64x64.png');
+      background-image: url(/assets/video-64x64.png);
+      background-size: 13px;
+      display: inline-block;
+      width: 16px;
+      height: 12px;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
 		}
 	}
 
