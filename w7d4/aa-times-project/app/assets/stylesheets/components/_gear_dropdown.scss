@@ -1,1 +1,14 @@
 // Use the gear_dropdown.png screenshot as a style guide
+#gear-dropdown {
+  z-index: 5;
+  position: absolute;
+  top: 28px;
+  right: -1px;
+  width: 240px;
+  background-color: white;
+  box-shadow: 1px 3px 5px grey;
+    #editions, #help {
+    position: relative;
+
+  }
+}
