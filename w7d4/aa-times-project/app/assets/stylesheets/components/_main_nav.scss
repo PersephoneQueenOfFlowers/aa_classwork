@@ -34,6 +34,17 @@
     > li:last-of-type {
   
     }
+    #gear {
+      position: relative;
+      #gear-dropdown {
+        position: absolute;
+        top: 28px;
+        right: -1px;
+      }
+      &:hover > .hidden{
+        display: block;
+      }
+    }
   }
   
   i {
