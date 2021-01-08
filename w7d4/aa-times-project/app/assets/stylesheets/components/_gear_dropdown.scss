@@ -13,14 +13,18 @@
     li {
       padding: 5px 3px;
     }
-    .editions li:not(:first-child):hover, .help li:not(:first-child):hover{
+    .editions li:not(:first-child):hover{
       background-color: #ebebeb;
       a{
         background-color: #ebebeb;
       }
     }
-    .help li:not(:first-child){
-           color: #5b698a;
+    .help li:not(:first-child):hover{
+      text-decoration: underline solid #527697;
+    }
+
+    .help li:not(:first-child) a{
+           color: #527697;
     }
   }  
 }
