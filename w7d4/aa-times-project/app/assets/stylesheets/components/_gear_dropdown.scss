@@ -5,10 +5,19 @@
   top: 28px;
   right: -1px;
   width: 240px;
+  padding: 13px 10px;
   background-color: white;
   box-shadow: 1px 3px 5px grey;
     #editions, #help {
     position: relative;
+    li {
+      padding: 5px 3px;
+    }    
+  }  
+}
 
-  }
+.dropdown-subtitle{
+  display: inline-block;
+  padding-left: 3px;
+  padding-bottom: 5px;
 }
