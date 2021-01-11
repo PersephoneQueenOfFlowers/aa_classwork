@@ -7,7 +7,9 @@ class User < ApplicationRecord
 
   after_initialize :ensure_session_token 
 
-  has_many :posts, as :postable
+  has_many :posts,
+    foreign_key: :author_id,
+    class_name: :Post 
 
 
 #   class Picture < ApplicationRecord
