@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  before_action :require_logged_in
+
   def index
     @users = User.all
     render :index
@@ -22,17 +24,31 @@ class UsersController < ApplicationController
     render :new
   end
 
-  def edit
-
-  end
-
+  
   def show
     @user = User.find(params[:id])
     render :show
   end
 
-  def update
+  #this is the call
+  def edit
+    user = User.find(:id)
+    #we get the current user and render their show page
+    redirect_to user_url(user)
+  end
 
+  #this is the form delivery from the show page
+  def update
+    @user = User.find(:id)
+
+    if user
+     @user.update(username: params[:user][:username],
+                  password: params[:user][:password])
+      redirect_to users_url
+    else
+      flash[:errors] = @user.errors.full_messages
+      redirect_to user_url(user)
+    end
   end
 
   private

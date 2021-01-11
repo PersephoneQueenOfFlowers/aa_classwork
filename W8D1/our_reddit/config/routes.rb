@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   resources :subs, except: [:destroy]
 
+  resources :users
+
 end
