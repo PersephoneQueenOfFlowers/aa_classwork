@@ -1,0 +1,33 @@
+<h1>Subjects index</h1>
+
+
+  <% @subs.each do |sub|%>
+    <div class="sub_container">
+      <div class="subject">
+        <h2><%=sub.title%></h2>
+      
+      <div class="description">Description:
+        <%=sub.description%>
+        <a href="<%=sub_url(sub)%>">visit this sub</a>
+      </div>
+    </div>
+    </div>
+  <%end%>
+
+
+<form action="<%=subs_url%>" method="POST">
+
+ <input type="hidden" name="authenticity_token" value=<%=form_authenticity_token%>>
+
+  <label>Title
+    <input type="text" name="sub[title]" value="">
+  </label>
+
+  <label>Description
+    <input type="text" name="sub[description]" value="">
+  </label>
+
+  <input type="submit" value="create sub">
+</form>
+
+
