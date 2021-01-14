@@ -2,7 +2,7 @@
  * Initializes the Piece with its color.
  */
 function Piece (color) {
-  console.log("hi there");
+
   this.color = color;
 }
 
@@ -10,19 +10,21 @@ function Piece (color) {
  * Returns the color opposite the current piece.
  */
 Piece.prototype.oppColor = function () {
-  console.log("HI THERE from oppColor");
-  // return (this.color === "white" ? "black" : "white");
+  // console.log("HI THERE from oppColor");
+  return (this.color === "white" ? "black" : "white");
 };
 
 /**
  * Changes the piece's color to the opposite color.
  */
 Piece.prototype.flip = function () {
-  if (this.color === "white") {
+  if (this.color === "white"){
     this.color = "black";
-  } else {
+  }
+  else {
     this.color = "white";
   }
+
 }
 
 /**
@@ -30,7 +32,7 @@ Piece.prototype.flip = function () {
  * based on its color.
  */
 Piece.prototype.toString = function () {
-  return (this.color === "white" ? "W" : "B" ); 
+  return (this.color === "white" ? "W" : "B");
 }
 
 // DON'T TOUCH THIS CODE

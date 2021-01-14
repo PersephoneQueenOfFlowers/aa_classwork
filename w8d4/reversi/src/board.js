@@ -5,10 +5,22 @@ if (typeof window === 'undefined'){
 // DON'T TOUCH THIS CODE
 
 /**
- * Returns a 2D array (8 by 8) with two black pieces at [3, 4] and [4, 3]
- * and two white pieces at [3, 3] and [4, 4]
+ * Returns a 2D array (8 by 8) with two black pieces at [3, 4] 
+ * and [4, 3] and two white pieces at [3, 3] and [4, 4]
  */
 function _makeGrid () {
+  let x = new Array(8);
+
+  for(let i =0; i<x.length; i++){
+    x[i] = new Array(8);
+  }
+
+  x[3][4] = new Piece("black");
+  x[4][3] = new Piece("black");
+  x[3][3] = new Piece("white");
+  x[4][4] = new Piece("white");
+
+  return x;
 }
 
 /**
@@ -28,6 +40,10 @@ Board.DIRS = [
  * Checks if a given position is on the Board.
  */
 Board.prototype.isValidPos = function (pos) {
+  let horizValid = (pos[0] >= 0 && pos[0] <= 7) ? true : false;
+  let vertValid = (pos[1] >= 0 && pos[1] <= 7) ? true : false;
+
+  return (horizValid && vertValid ? true : false); 
 };
 
 /**
