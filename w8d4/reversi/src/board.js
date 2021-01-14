@@ -51,15 +51,13 @@ Board.prototype.isValidPos = function (pos) {
  * throwing an Error if the position is invalid.
  */
 Board.prototype.getPiece = function (pos) {
-  let gridPosition = this.grid[pos[0]][pos[1]];
   // console.log("grid position valid: => " + this.isValidPos(gridPosition));
   // console.log("getPiece: => " + gridPosition);
-  if ( this.isValidPos(gridPosition) === false ){
-
+  if ( this.isValidPos(pos) === false  ){
     throw new Error('Not valid pos!');
-    // return undefined;
-  }else {
-    return (gridPosition);
+  } else {
+  let gridPosition = this.grid[pos[0]][pos[1]];
+  return (gridPosition);
   }
 };
 // [pos[0]][pos[1]] then add this
@@ -68,6 +66,9 @@ Board.prototype.getPiece = function (pos) {
  * matches a given color.
  */
 Board.prototype.isMine = function (pos, color) {
+
+  
+
 };
 
 /**
