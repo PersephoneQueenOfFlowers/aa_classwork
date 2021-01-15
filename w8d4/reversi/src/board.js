@@ -92,7 +92,6 @@ Board.prototype.isOccupied = function (pos) {
  *
  * Returns empty array if no pieces of the opposite color are found.
  */
-Board.prototype._positionsToFlip = function(pos, color, dir, piecesToFlip){
 //         0,1
 //          |
 //      -1,1| 1,1
@@ -100,6 +99,39 @@ Board.prototype._positionsToFlip = function(pos, color, dir, piecesToFlip){
 //     -1,-1| -1,0
 //          |
 //         0,-1
+// Piece.prototype.oppColor = function () {
+//   return (this.color === "white" ? "black" : "white");
+// };
+
+Board.prototype._positionsToFlip = function(pos, color, dir, piecesToFlip = []){
+
+  // the order as established that we want to add the positions to flip. 
+  // 1#  advance the position in the given direction 
+  // 2# check if it's a valid position 
+  // 3# check if it's occupied 
+  // 4# check if the color is the color we want to switch
+  // 5# add it to the aray 
+
+  pos[0] += dir[0];
+  pos[1] += dir[1];
+  piecesToFlip.push(pos);
+  //stopping: if empty, or end of board, or our color. how do we check for base cases? 
+
+  if (this.isOccupied(pos) === false){
+    return []; 
+  } else if (this.isValidPos(pos) === false) {
+    return [];
+  } else if (this.isMine(pos, color) ){
+    return piecesToFlip;
+  } else {
+    this._positionsToFlip(pos, color, dir, piecesToFlip);
+  }
+
+  let currentPiece = this.getPiece(pos);
+  if (currentPiece.oppColor === color ) {
+    return [];
+   }
+
 };
 
 /**
