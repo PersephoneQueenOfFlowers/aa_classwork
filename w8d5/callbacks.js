@@ -4,38 +4,28 @@ class Clock {
     // 2. Store the hours, minutes, and seconds.
     // 3. Call printTime.
     // 4. Schedule the tick at 1 second intervals.
-    this.date = new Date()
-    setInterval(function () { 
-      console.log("this => " + this)
-      this._tick(printTime); 
-    },1000);
+    let date = new Date();
+    this.seconds = date.getSeconds();
+    this.minutes = date.getMinutes();
+    this.hours = date.getHours();
+    // console.log("current time => " + date)
+    console.log("this =>" + this)
+    let boundTick = this._tick.bind(this)
+    setInterval(boundTick, 1000)
   }
-  
+
   printTime() {
     // Format the time in HH:MM:SS
     // Use console.log to print it.
-    console.log("current time => " + this.date)
+
+    // console.log("current time => " + date);
   }
-  
-  _tick(cb) {
-    console.log("inside _tick =>" + this.date);
+
+  _tick() {
     // 1. Increment the time by one second.
     // 2. Call printTime.
+    console.log(this)
   }
 }
 
 const clock = new Clock();
-clock._tick.bind(clock)
-clock.printTime.bind(clock)
-
-
-// const obj = {
-//   name: "Lola"
-// }
-
-// function greet(msg1, msg2) {
-//   console.log(`${msg1}: ${this.name}`)
-//   console.log(`${msg2}: ${this.name}`)
-// }
-
-// greet.bind(obj)("Hello", "Goodbye")
