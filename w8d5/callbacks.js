@@ -4,11 +4,15 @@ class Clock {
     // 2. Store the hours, minutes, and seconds.
     // 3. Call printTime.
     // 4. Schedule the tick at 1 second intervals.
+    let date = new Date()
+    // console.log("current time => " + date)
+    this.printTime(date)
   }
 
   printTime() {
     // Format the time in HH:MM:SS
     // Use console.log to print it.
+    console.log("current time => " + date)
   }
 
   _tick() {
