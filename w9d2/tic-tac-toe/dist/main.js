@@ -45,7 +45,7 @@ eval("\nconst MoveError = function (msg) { this.msg = msg; };\n\n// MoveError re
   \*************************/
 /***/ ((module) => {
 
-eval("class View {\n  constructor(game, $el) {}\n\n  bindEvents() {}\n\n  makeMove($square) {}\n\n  setupBoard() {\n    console.log(\"made it in set up board\");\n    let $grid = $(\"<ul></ul>\").html('<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>');\n    $('.ttt').append($grid);\n    $grid.css('display', 'flex');\n  }\n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack:///./src/ttt-view.js?");
+eval("class View {\n  constructor(game, $el) {}\n\n  bindEvents() {}\n\n  makeMove($square) {}\n\n  setupBoard() {\n    let $grid = $(\"<ul></ul>\").html('<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>');\n    $('.ttt').append($grid);\n  }\n}\n\nmodule.exports = View;\n\n\n\n\n//# sourceURL=webpack:///./src/ttt-view.js?");
 
 /***/ })
 
