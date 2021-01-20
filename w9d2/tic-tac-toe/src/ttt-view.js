@@ -1,7 +1,14 @@
 class View {
   constructor(game, $el) {}
 
-  bindEvents() {}
+  bindEvents(ctx, bindArgs) {
+    // const that = this;
+    // debugger 
+    ctx.playMove(bindArgs);
+    return function(...callArgs){
+      return that.apply(ctx, bindArgs.concat(callArgs));
+    }
+  }
 
   makeMove($square) {}
 

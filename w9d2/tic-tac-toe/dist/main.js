@@ -45,7 +45,7 @@ eval("\nconst MoveError = function (msg) { this.msg = msg; };\n\n// MoveError re
   \*************************/
 /***/ ((module) => {
 
-eval("class View {\n  constructor(game, $el) {}\n\n  bindEvents() {}\n\n  makeMove($square) {}\n\n  setupBoard() {\n    let $grid = $(\"<ul></ul>\").html('<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>');\n    $('.ttt').append($grid);\n  }\n}\n\nmodule.exports = View;\n\n\n\n\n//# sourceURL=webpack:///./src/ttt-view.js?");
+eval("class View {\n  constructor(game, $el) {}\n\n  bindEvents(ctx, bindArgs) {\n    // const that = this;\n    // debugger \n    ctx.playMove(bindArgs);\n    return function(...callArgs){\n      return that.apply(ctx, bindArgs.concat(callArgs));\n    }\n  }\n\n  makeMove($square) {}\n\n  setupBoard() {\n    let $grid = $(\"<ul></ul>\").html('<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>');\n    $('.ttt').append($grid);\n  }\n}\n\nmodule.exports = View;\n\n\n\n\n//# sourceURL=webpack:///./src/ttt-view.js?");
 
 /***/ })
 
@@ -79,7 +79,7 @@ eval("class View {\n  constructor(game, $el) {}\n\n  bindEvents() {}\n\n  makeMo
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\");\nconst Game = __webpack_require__(/*! ./game.js */ \"./src/game.js\");\n\n// Game \n$(() => {\n  // Your code here\n  const $figure = $('.ttt');\n  const $game = new Game();\n  const $view = new View($game, $figure);\n  console.log($view);\n  // create a 3x3 grid, ul list with 9 li items;\n  // use flex to make 3 items per row;\n  // create boarders around items; \n  $view.setupBoard();\n\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\");\nconst Game = __webpack_require__(/*! ./game.js */ \"./src/game.js\");\n\n// Game \n$(() => {\n  // Your code here\n  // create a 3x3 grid, ul list with 9 li items;\n  // use flex to make 3 items per row;\n  // create boarders around items; \n  const $figure = $('.ttt');\n  const $game = new Game();\n  const $view = new View($game, $figure);\n  $view.setupBoard();\n  let $cell = $('.ttt ul li');\n  $cell.on('click', (e) => {\n    // debugger \n    $view.bindEvents($game, e.target);\n\n  });\n\n\n});\n\n// $cell.on('click', (e) => {\n//   // debugger \n//   $view.bindEvents($game, e.target);\n    //$(e.target).toggleClass()\n// });\n\n\n//# sourceURL=webpack:///./src/index.js?");
 })();
 
 /******/ })()
