@@ -1,0 +1,25 @@
+<p>please create an album now</p>
+<form action="<%=albums_url%>" method="POST">
+    <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %>>
+
+    <label>Title:
+      <span class="td"><input type="text" name="album[title]" value=""></span>
+    </label> 
+
+      <label>Year:
+      <span class="td"><input type="text" name="album[year]" value=""></span>
+    </label>
+
+      <label for="live">Live:
+      <input type="radio" id="live" name="album[live]" value="true">
+      </label><br>
+
+      <label for="studio">Studio
+      <input type="radio" id="studio" name="album[live]" value="false">
+      </label><br>
+      <br><br>
+    
+    </label> 
+    <span class="td"><input class="button" type="submit" value="add album"></span>
+    <input type="hidden" id="band_id" name="band_id" value="<%= params[:band_id] %>">
+</form>

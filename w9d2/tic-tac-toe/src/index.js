@@ -13,7 +13,8 @@ $(() => {
   $view.setupBoard();
   let $cell = $('.ttt ul li');
   $cell.on('click', (e) => {
-    // debugger 
+    $targetEl = $(e.target);
+    debugger;
     $view.bindEvents($game, e.target);
 
   });

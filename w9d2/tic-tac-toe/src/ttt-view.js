@@ -3,17 +3,18 @@ class View {
 
   bindEvents(ctx, bindArgs) {
     // const that = this;
-    // debugger 
-    ctx.playMove(bindArgs);
-    return function(...callArgs){
-      return that.apply(ctx, bindArgs.concat(callArgs));
-    }
+    let thisPos = bindArgs; 
+    let thisPlay = ctx.playMove;
+    debugger;
+    // return function(...callArgs){
+    //   return ctx.apply(thisPlay, thisPos);
+    // }
   }
 
   makeMove($square) {}
 
   setupBoard() {
-    let $grid = $("<ul></ul>").html('<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>');
+    let $grid = $("<ul></ul>").html('<li data-pos="[0,0]"></li><li data-pos="[0,1]"></li><li data-pos="[0,2]"></li"><li data-pos="[1,0]"></li><li data-pos="[1,1]"></li><li data-pos="[1,2]"></li><li data-pos="[2,0]"></li><li data-pos="[2,1]"></li><li data-pos="[2,2]"></li>');
     $('.ttt').append($grid);
   }
 }

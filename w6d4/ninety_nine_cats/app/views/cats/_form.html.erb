@@ -1,0 +1,45 @@
+<% if type == :new %>
+    <% action_url = "/cats" %>
+    <% button_text = "Create cat" %>
+<% elsif type == :edit %>
+    <% action_url = "/cats/#{cat.id}" %>
+    <% button_text = "Update cat" %>
+<% end %>
+
+<form action="<%= action_url %>" method="POST">
+
+  <% if type == :edit %>
+    <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+
+  <% cat = @cat  %>
+
+  <fieldset>
+    <legend>Edit Cat: <%= cat.id %></legend>
+    <label for="name">name:</label><br>
+    <input type="text" id="name" name="cat[name]" value="<%= cat.name %>"><br>
+    <label for="color">color:</label><br>
+    <select id="color" name="cat[color]" size="COLORS.length" style="min-width:250px">
+      <option value="green" selected="selected">default</option> 
+      <% StaticData::COLORS.each_with_index do |color,idx|  %>
+      <option value="<%= color %>"> <%=color%></option> 
+      <% end %>
+    </select><br>
+    <label for="birth_date">Birthdate: (format XXXX-XX-XX)</label><br>
+    <input type="date" id="birth_date" name="cat[birth_date]" value="<%= cat.birth_date %>"><br>
+    <label for="description">Description:</label><br>
+    <input type="text-area" id="description" name="cat[description]" value="<%= cat.description %>"><br>
+    <label for="sex">Sex:</label><br>
+
+    <input type="radio" id="male" name="cat[sex]" value="M">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="cat[sex]" value="F">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="cat[sex]" value="O">
+    <label for="other">Other</label><br><br>
+    <input type="submit" value="<%= button_text %>">
+  </fieldset>
+
+</form>
+
+

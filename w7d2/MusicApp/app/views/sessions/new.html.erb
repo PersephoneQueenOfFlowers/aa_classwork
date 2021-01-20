@@ -1,0 +1,26 @@
+
+<section class="page"><div class="centered-box">
+  <h1 class="anaglyph">!bbandappadnabb!</h1>
+  <p>get your bands and albums in here now</p>
+  <div class="table">
+    <form action="<%= sessions_url %>" method="POST">
+      <input
+        type="hidden"
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>">
+
+      <label>Email
+      <span class="td"><input type="text" name="user[email]" id="user_username" value="" /></span>
+      </label>
+      <br>
+
+      <label>Password
+      <span class="td"><input type="password" name="user[password]" id="user_password" value="" /></span>
+      </label>
+      <br>
+
+      <span class="td button"><input class="button" type="submit" value="GO FOR IT"></span>
+    </form>
+  </table>
+</div>
+</section>

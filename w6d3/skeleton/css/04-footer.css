@@ -1,0 +1,17 @@
+/* PHASE 4: Footer */
+
+footer {
+  margin-top: 15px;
+}
+
+footer .text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text-container * {
+  color: dimgray;
+}

@@ -1,0 +1,20 @@
+<div class="page">
+<p>this is show page for <%=@band.name%> !!</p>
+<p><%=@band.name%> albums are...</p>
+ <ul>
+  <%@band.albums.each do |album|%>
+    <li><%= album.title %>
+    <% if album.live == true %>
+      <span>live album!</span>
+    <% else %>
+      <span>studio album!</span>
+    <% end %>
+    <span class="year"><%=album.year%></span></li>
+<a class="button_small" href="<%=album_url(album)%>">visit album page</a>
+    <% end %>
+</ul>
+<a class="button" href="<%=new_band_album_url(@band)%>">create an album</a>
+<a class="button" href="<%=bands_url%>">return to bands</a>
+</div>
+
+

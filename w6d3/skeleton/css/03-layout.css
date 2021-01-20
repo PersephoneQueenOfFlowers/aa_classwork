@@ -1,0 +1,26 @@
+/* PHASE 3: Layout */
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.content-sidebar {
+  width: 25%;
+  padding: 15px;
+  min-height: 250px;
+  border-right: solid 1px #666;
+}
+
+.content-sidebar ul li {
+  color: black;
+  background-color: #fff;
+}
+
+.content-sidebar ul li:nth-child(even){
+  background-color: #efefef;
+}
+
+.content-main {
+  width: 75%;
+  min-height: 250px;
+}

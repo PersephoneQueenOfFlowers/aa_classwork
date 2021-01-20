@@ -1,0 +1,21 @@
+<h2>make a new goal</h2>
+
+<form action=<%= user_goals_url%> method="POST">
+  <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %>>
+  <!-- form_authenticity_token is a rails helper method -->
+  <!-- needed for non-GET requests  -->
+
+  <label >Name
+    <input type="text" name="goal[name]" value="">
+  </label>
+
+  <label >Details
+    <input type="text" name="user[details]" value="">
+  </label>
+
+  
+
+  <input type="submit" value="Sign In">
+
+</form>
+
