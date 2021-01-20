@@ -79,7 +79,7 @@ eval("class View {\n  constructor(game, $el) {}\n\n  bindEvents() {}\n\n  makeMo
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\");\nconst Game = __webpack_require__(/*! ./game.js */ \"./src/game.js\");\n\n  $(() => {\n    // Your code here\n  });\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\");\nconst Game = __webpack_require__(/*! ./game.js */ \"./src/game.js\");\n\n// Game \n$(() => {\n  // Your code here\n  let $view = $('.ttt');\n  console.log(\"View: \" + View);\n  View.prototype.setupBoard = function(){\n    // create a 3x3 grid, ul list with 9 li items;\n    // use flex to make 3 items per row;\n    // create boarders around items; \n  }\n    \n  });\n\n\n//# sourceURL=webpack:///./src/index.js?");
 })();
 
 /******/ })()
