@@ -19,7 +19,8 @@ $(() => {
     $view.bindEvents($game, $targetPos);
 
 
-    $targetEl.css('background-color', 'red');
+    // $targetEl.css('background-color', 'red');
+    // $targetEl.text('hello');
     // $("li").text(mark);
 
     // $("li").data('pos', '[0,0]')
