@@ -14,9 +14,15 @@ $(() => {
   let $cell = $('.ttt ul li');
   $cell.on('click', (e) => {
     $targetEl = $(e.target);
-    debugger;
-    $view.bindEvents($game, e.target);
+    // debugger;
+    $targetPos = $targetEl.data('pos')
+    $view.bindEvents($game, $targetPos);
 
+
+    $targetEl.css('background-color', 'red');
+    // $("li").text(mark);
+
+    // $("li").data('pos', '[0,0]')
   });
 
 

@@ -33,8 +33,13 @@ class Board {
     if (!this.isEmptyPos(pos)) {
       throw new MoveError('Is not an empty position!');
     }
-
+    // let $thisEl = $('ul').find(`[data-pos='pos[0]][pos[1]']`)
+    // console.log(pos);
+    // debugger;
     this.grid[pos[0]][pos[1]] = mark;
+    // $thisEl.css('border', 'red');
+    // $("li").text(mark);
+    // $('')
   }
 
   print() {

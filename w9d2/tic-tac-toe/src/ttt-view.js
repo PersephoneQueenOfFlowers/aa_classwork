@@ -1,11 +1,12 @@
 class View {
   constructor(game, $el) {}
 
-  bindEvents(ctx, bindArgs) {
+  bindEvents(ctx, pos) {
     // const that = this;
-    let thisPos = bindArgs; 
-    let thisPlay = ctx.playMove;
-    debugger;
+    // let thisPos = bindArgs; 
+    // let thisPlay = ctx.playMove;
+    // debugger;
+    ctx.playMove(pos)
     // return function(...callArgs){
     //   return ctx.apply(thisPlay, thisPos);
     // }
