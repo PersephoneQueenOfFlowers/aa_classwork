@@ -5,9 +5,29 @@
 /*!***********************************!*\
   !*** ./frontend/follow_toggle.js ***!
   \***********************************/
-/***/ (() => {
+/***/ ((module) => {
 
-throw new Error("Module parse failed: Unexpected token (11:11)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n|   }\n| \n>   function render()[\n|     \n|   ]");
+
+
+class FollowToggle {
+  constructor(el){
+    // debugger
+    this.$el = $(el); 
+    this.userid = this.$el.data("user_id");
+    this.followState = this.$el.data("initial-follow-state"); 
+    this.render();
+  }
+
+  render(){
+    
+    if (this.followState === "unfollowed") {
+      $('.follow-toggle').text('Follow!');
+    } else if (this.followState === "followed")
+      $('.follow-toggle').text('Unfollow!');
+  }
+}
+
+module.exports = FollowToggle;
 
 /***/ })
 
