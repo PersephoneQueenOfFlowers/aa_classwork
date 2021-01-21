@@ -1,25 +1,39 @@
 class View {
-  constructor(game, $el) {}
+  constructor(game, $el) {
 
-  bindEvents(ctx, pos) {
-    // const that = this;
-    // let thisPos = bindArgs; 
-    // let thisPlay = ctx.playMove;
-    // debugger;
-    ctx.playMove(pos)
-    // return function(...callArgs){
-    //   return ctx.apply(thisPlay, thisPos);
-    // }
+    this.game = game;
+    this.$el = $el; 
+
+    this.setupBoard();
+    this.bindEvents();
+  }
+
+  bindEvents() {
+    // install a handler on the `li` elements inside the board.
+    this.$el.on("click", "li", (event => {
+      const $square = $(event.currentTarget);
+      this.makeMove($square);
+    }));
   }
 
   makeMove($square) {}
 
   setupBoard() {
-    let $grid = $("<ul></ul>").html('<li data-pos="[0,0]"></li><li data-pos="[0,1]"></li><li data-pos="[0,2]"></li"><li data-pos="[1,0]"></li><li data-pos="[1,1]"></li><li data-pos="[1,2]"></li><li data-pos="[2,0]"></li><li data-pos="[2,1]"></li><li data-pos="[2,2]"></li>');
-    $('.ttt').append($grid);
+    const $ul = $("<ul>");
+
+    for (let rowIdx = 0; rowIdx < 3; rowIdx++) {
+      for (let colIdx = 0; colIdx < 3; colIdx++) {
+        let $li = $("<li>");
+        $li.data("pos", [rowIdx, colIdx]);
+
+        $ul.append($li);
+      }
+    }
+    debugger
+    this.$el.append($ul);
+  }
+
   }
 }
 
 module.exports = View;
-
-
