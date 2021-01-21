@@ -1,12 +1,23 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./frontend/api_util.js":
+/*!******************************!*\
+  !*** ./frontend/api_util.js ***!
+  \******************************/
+/***/ (() => {
+
+throw new Error("Module parse failed: Unexpected token (11:7)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n|         console.log(data);\n|         followState = \"unfollowed\";\n>       });\n|     }\n|   },");
+
+/***/ }),
+
 /***/ "./frontend/follow_toggle.js":
 /*!***********************************!*\
   !*** ./frontend/follow_toggle.js ***!
   \***********************************/
-/***/ ((module) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+const APIUtil = __webpack_require__(/*! ./api_util */ "./frontend/api_util.js");
 
 class FollowToggle {
   constructor(el){
@@ -35,21 +46,13 @@ class FollowToggle {
     e.preventDefault();
     e.stopPropagation();
     if (this.followState === "unfollowed") {
-      // ajax post request
-      $.ajax({
-        type: 'POST',
-        url: "/users/${this.userid}/follow",
-        dataType: 'json'
-      });
-      this.followState = "followed";
+      APIUtil.followUser(this.userid, this.followState).then(function(){
+        // this.followState = "followed";
+      })
     } else if (this.followState === "followed"){
-      // ajax delete request
-      $.ajax({
-        type: 'DELETE',
-        url: "/users/${this.userid}/follow",
-        dataType: 'json'
-      });
-      this.followState = "unfollowed";
+      APIUtil.unfollowUser(this.userid, this.followState).then(function(){
+        // // this.followState = "unfollowed";
+      })
     }
     this.render();
   }
