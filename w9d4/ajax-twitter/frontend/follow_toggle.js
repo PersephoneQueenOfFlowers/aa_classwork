@@ -27,13 +27,9 @@ class FollowToggle {
     e.preventDefault();
     e.stopPropagation();
     if (this.followState === "unfollowed") {
-      APIUtil.followUser(this.userid, this.followState).then(function(){
-        // this.followState = "followed";
-      })
+      APIUtil.followUser(this.userid, this.followState)
     } else if (this.followState === "followed"){
-      APIUtil.unfollowUser(this.userid, this.followState).then(function(){
-        // // this.followState = "unfollowed";
-      })
+      APIUtil.unfollowUser(this.userid, this.followState)
     }
     this.render();
   }

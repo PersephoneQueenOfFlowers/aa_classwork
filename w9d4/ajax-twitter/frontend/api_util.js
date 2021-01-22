@@ -1,15 +1,13 @@
 const APIUtil = {
   followUser: (id,followState) => {
-    debugger
     $.ajax({
       type: 'POST',
       url: "/users/${id}/follow",
       dataType: 'json',
-      success: function (data) {
-        console.log(data);
+      success: function () {
+        // console.log(data);
         followState = "unfollowed";
-      });
-    }
+    }});
   },
 
   unfollowUser: (id,followState) => {
@@ -17,11 +15,10 @@ const APIUtil = {
       type: 'DELETE',
       url: "/users/${id}/follow",
       dataType: 'json',
-      success: function (data) {
-        console.log(data);
+      success: function () {
+        // console.log(data);
         followState = "unfollowed";
-      });
-    }
+    }});
   }
 };
 

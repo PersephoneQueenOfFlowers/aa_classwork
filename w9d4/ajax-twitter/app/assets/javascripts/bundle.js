@@ -5,9 +5,51 @@
 /*!******************************!*\
   !*** ./frontend/api_util.js ***!
   \******************************/
-/***/ (() => {
+/***/ ((module) => {
 
-throw new Error("Module parse failed: Unexpected token (11:7)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n|         console.log(data);\n|         followState = \"unfollowed\";\n>       });\n|     }\n|   },");
+const APIUtil = {
+  followUser: (id,followState) => {
+    $.ajax({
+      type: 'POST',
+      url: "/users/${id}/follow",
+      dataType: 'json',
+      success: function () {
+        // console.log(data);
+        followState = "unfollowed";
+    }});
+  },
+
+  unfollowUser: (id,followState) => {
+    $.ajax({
+      type: 'DELETE',
+      url: "/users/${id}/follow",
+      dataType: 'json',
+      success: function () {
+        // console.log(data);
+        followState = "unfollowed";
+    }});
+  }
+};
+
+module.exports = APIUtil;
+
+// if (this.followState === "unfollowed") {
+//   // ajax post request
+//   $.ajax({
+//     type: 'POST',
+//     url: "/users/${this.userid}/follow",
+//     dataType: 'json'
+//   });
+//   this.followState = "followed";
+// } else if (this.followState === "followed") {
+//   // ajax delete request
+//   $.ajax({
+//     type: 'DELETE',
+//     url: "/users/${this.userid}/follow",
+//     dataType: 'json'
+//   });
+//   this.followState = "unfollowed";
+// }
 
 /***/ }),
 
@@ -46,13 +88,9 @@ class FollowToggle {
     e.preventDefault();
     e.stopPropagation();
     if (this.followState === "unfollowed") {
-      APIUtil.followUser(this.userid, this.followState).then(function(){
-        // this.followState = "followed";
-      })
+      APIUtil.followUser(this.userid, this.followState)
     } else if (this.followState === "followed"){
-      APIUtil.unfollowUser(this.userid, this.followState).then(function(){
-        // // this.followState = "unfollowed";
-      })
+      APIUtil.unfollowUser(this.userid, this.followState)
     }
     this.render();
   }
