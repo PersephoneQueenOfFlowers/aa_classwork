@@ -1,4 +1,4 @@
-import warmUp from "./warmup";
+import { htmlGenerator } from "./warmup";
 
 class Clock {
   constructor() {
@@ -10,17 +10,15 @@ class Clock {
     this.seconds = date.getSeconds();
     this.minutes = date.getMinutes();
     this.hours = date.getHours();
-    // console.log("current time => " + date)
-    let boundTick = this._tick.bind(this)
-    setInterval(boundTick, 1000)
+    htmlGenerator(this.printTime(), clockElement);
+    setInterval(this._tick.bind(this), 1000);
   }
 
   printTime() {
     // Format the time in HH:MM:SS
     // Use console.log to print it.
     let time = `${this.hours}:${this.minutes}:${this.seconds}`;
-    console.log("current time => " + time);
-    // console.log("current time => " + date);
+    return time;
   }
 
   _tick() {
@@ -41,10 +39,10 @@ class Clock {
     }
     // 1. Increment the time by one second.
     // 2. Call printTime.
-    this.printTime()
+    htmlGenerator(clock.printTime(), clockElement);
   }
 }
 
-const clock = new Clock();
 const clockElement = document.getElementById('clock');
-htmlGenerator('Clock Time.', clock);
+const clock = new Clock();
+
