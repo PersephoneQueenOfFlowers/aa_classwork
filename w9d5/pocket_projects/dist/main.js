@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/clock.js":
+/*!**********************!*\
+  !*** ./src/clock.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _warmup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./warmup */ \"./src/warmup.js\");\n\n\nclass Clock {\n  constructor() {\n    // 1. Create a Date object.\n    // 2. Store the hours, minutes, and seconds.\n    // 3. Call printTime.\n    // 4. Schedule the tick at 1 second intervals.\n    let date = new Date();\n    this.seconds = date.getSeconds();\n    this.minutes = date.getMinutes();\n    this.hours = date.getHours();\n    // console.log(\"current time => \" + date)\n    let boundTick = this._tick.bind(this)\n    setInterval(boundTick, 1000)\n  }\n\n  printTime() {\n    // Format the time in HH:MM:SS\n    // Use console.log to print it.\n    let time = `${this.hours}:${this.minutes}:${this.seconds}`;\n    console.log(\"current time => \" + time);\n    // console.log(\"current time => \" + date);\n  }\n\n  _tick() {\n    if (this.seconds === 59) {\n      this.seconds = 0;\n      this.minutes += 1;\n    } else {\n      this.seconds += 1;\n    }\n\n    if (this.minutes === 59 && this.seconds === 59) {\n      this.minutes = 0;\n      this.hours += 1;\n    }\n\n    if (this.hours === 23 && this.minutes === 59 && this.seconds === 59) {\n      this.hours = 0;\n    }\n    // 1. Increment the time by one second.\n    // 2. Call printTime.\n    this.printTime()\n  }\n}\n\nconst clock = new Clock();\nconst clockElement = document.getElementById('clock');\nhtmlGenerator('Clock Time.', clock);\n\n//# sourceURL=webpack:///./src/clock.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _warmup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./warmup */ \"./src/warmup.js\");\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _warmup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./warmup */ \"./src/warmup.js\");\n/* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clock */ \"./src/clock.js\");\n\n\n\n\n// const clock = new Clock();\n// htmlGenerator('Clock Time.', clock);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _war
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"htmlGenerator\": () => /* binding */ htmlGenerator\n/* harmony export */ });\n\nconst partyHeader = document.getElementById('party');\nconst welcome = document.getElementsByClassName('welcome');\nconsole.log(welcome)\n\nconst htmlGenerator = (string, htmlElement) => {\n    let element = document.createElement(\"p\");\n    const newContent = document.createTextNode(string);\n    element.appendChild(newContent);\n    welcome.insertBefore(element, partyHeader.nextSibling);\n};\n\nhtmlGenerator('Party Time.', partyHeader);\n\n//# sourceURL=webpack:///./src/warmup.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"htmlGenerator\": () => /* binding */ htmlGenerator\n/* harmony export */ });\n\nconst partyHeader = document.getElementById('party');\nconst welcome = document.getElementsByClassName('welcome');\n\nconst htmlGenerator = (string, htmlElement) => {\n    let element = document.createElement(\"p\");\n    element.innerText = string;\n    htmlElement.appendChild(element);\n    \n};\n\nhtmlGenerator('Party Time.', partyHeader);\n\n\n\n//# sourceURL=webpack:///./src/warmup.js?");
 
 /***/ })
 

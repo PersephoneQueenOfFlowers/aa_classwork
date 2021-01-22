@@ -1,5 +1,3 @@
-import warmUp from "./warmup";
-
 class Clock {
   constructor() {
     // 1. Create a Date object.
@@ -24,21 +22,21 @@ class Clock {
   }
 
   _tick() {
-    if (this.seconds === 59) {
+    if(this.seconds === 59){
       this.seconds = 0;
       this.minutes += 1;
-    } else {
+    }else {
       this.seconds += 1;
     }
 
     if (this.minutes === 59 && this.seconds === 59) {
       this.minutes = 0;
       this.hours += 1;
-    }
+    } 
 
     if (this.hours === 23 && this.minutes === 59 && this.seconds === 59) {
       this.hours = 0;
-    }
+    } 
     // 1. Increment the time by one second.
     // 2. Call printTime.
     this.printTime()
@@ -46,5 +44,3 @@ class Clock {
 }
 
 const clock = new Clock();
-const clockElement = document.getElementById('clock');
-htmlGenerator('Clock Time.', clock);
