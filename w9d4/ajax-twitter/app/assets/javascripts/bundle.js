@@ -15,7 +15,9 @@ const APIUtil = {
       dataType: 'json',
       success: function () {
         // console.log(data);
+        debugger;
         FollowToggle.followState = "unfollowed";
+        FollowToggle.render();
     }});
   },
 
@@ -27,6 +29,7 @@ const APIUtil = {
       success: function () {
         // console.log(data);
         FollowToggle.followState = "unfollowed";
+        FollowToggle.render();
     }});
   }
 };
@@ -58,19 +61,31 @@ class FollowToggle {
     
     if (this.followState === "unfollowed") {
       $('.follow-toggle').text('Follow!');
-    } else if (this.followState === "followed")
+    } else if (this.followState === "followed") {
       $('.follow-toggle').text('Unfollow!');
-  }
+    } else if (this.followState === "unfollowing") {
+      $('.follow-toggle').text('Unfollowing!');
+      $('.follow-toggle').attr('disabled', true);
+    } else if (this.followState === "following") {
+      $('.follow-toggle').text('Following!');
+      $('.follow-toggle').attr('disabled', true);
+    }
+  }  
 
   handleClick(e){
     e.preventDefault();
     e.stopPropagation();
     if (this.followState === "unfollowed") {
-      APIUtil.followUser(this.userid,this)
+      this.followState = 'following';
+      this.render();
+      APIUtil.followUser(this.userid, this)
+      this.render();
     } else if (this.followState === "followed"){
+      this.followState = 'unfollowing';
+      this.render();
       APIUtil.unfollowUser(this.userid, this)
+      this.render();
     }
-    this.render();
   }
 }
 

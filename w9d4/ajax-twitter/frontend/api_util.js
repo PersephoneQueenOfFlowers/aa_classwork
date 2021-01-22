@@ -6,7 +6,9 @@ const APIUtil = {
       dataType: 'json',
       success: function () {
         // console.log(data);
+        debugger;
         FollowToggle.followState = "unfollowed";
+        FollowToggle.render();
     }});
   },
 
@@ -18,6 +20,7 @@ const APIUtil = {
       success: function () {
         // console.log(data);
         FollowToggle.followState = "unfollowed";
+        FollowToggle.render();
     }});
   }
 };
