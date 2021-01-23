@@ -9,3 +9,13 @@ const dogs = {
   "French Bulldog": "https://www.akc.org/dog-breeds/french-bulldog/" 
 };
 
+function dogLinkCreator(dogs) {
+  Object.keys(dogs).forEach(dog => {
+    let anchor = document.createElement("a");
+    anchor.href = dog[key]
+    anchor.innerHTML = dog;
+    let listItem = document.createElement("li");
+    
+
+  })
+}
