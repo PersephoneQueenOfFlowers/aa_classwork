@@ -57,7 +57,7 @@ h1 {
   font-family: monospace;
 }
 
-.drop-down-dog-list li {
+.drop-down-dog-list li.hidden {
   display: none;
   
 }

@@ -32,19 +32,20 @@ function attachDogLinks(){
   });
 }
 
-const dogLists = document.querySelector('.drop-down-dog-list');
-dogLists.addEventListener("mouseenter", handleEnter);
-dogLists.addEventListener("mouseleave", handleLeave);
-
-
-
 const handleEnter = (e) => {
   //add code here to set display in-line block of li items
+  //.drop-down-dog-list li remove hidden class
+  // dogLists.classList.remove('hidden');
 };
 
 const handleLeave = (e) => {
   //add code here to set display none of li items
+//.drop-down-dog-list li add hidden class
+  // dogLists.classList.add('hidden');
 };
 
+const dogLists = document.querySelector('.drop-down-dog-list');
+dogLists.addEventListener("mouseenter", handleEnter);
+dogLists.addEventListener("mouseleave", handleLeave);
 
 attachDogLinks();
