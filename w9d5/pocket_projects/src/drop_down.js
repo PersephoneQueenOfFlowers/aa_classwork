@@ -10,12 +10,26 @@ const dogs = {
 };
 
 function dogLinkCreator(dogs) {
+  let dogList = [];
   Object.keys(dogs).forEach(dog => {
     let anchor = document.createElement("a");
-    anchor.href = dog[key]
+    anchor.href = dogs[dog];
     anchor.innerHTML = dog;
     let listItem = document.createElement("li");
-    
-
-  })
+    listItem.classList = "dog-link";
+    listItem.appendChild(anchor);
+    dogList.push(listItem);
+    // dog is the dog name
+    // dogs[dog] is the link
+  });
+  return dogList;
 }
+
+function attachDogLinks(){
+  const dogLinks = dogLinkCreator(dogs);
+  dogLinks.forEach((link) => {
+    document.querySelector('.drop-down-dog-list').appendChild(link);
+  });
+}
+
+attachDogLinks();
