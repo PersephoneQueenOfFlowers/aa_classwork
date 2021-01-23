@@ -1,50 +1,55 @@
-import warmUp from "./warmup";
+import { htmlGenerator } from "./warmup";
 
 class Clock {
   constructor() {
-    // 1. Create a Date object.
-    // 2. Store the hours, minutes, and seconds.
-    // 3. Call printTime.
-    // 4. Schedule the tick at 1 second intervals.
-    let date = new Date();
-    this.seconds = date.getSeconds();
-    this.minutes = date.getMinutes();
-    this.hours = date.getHours();
-    // console.log("current time => " + date)
-    let boundTick = this._tick.bind(this)
-    setInterval(boundTick, 1000)
+    const currentTime = new Date();
+
+    this.hours = currentTime.getHours();
+    this.minutes = currentTime.getMinutes();
+    this.seconds = currentTime.getSeconds();
+    // ensure our clock is always on the page and doesn't have to wait for 
+    // the first tick
+    htmlGenerator(this.printTime(), clockElement);
+    // Schedule the tick at 1 second intervals.
+    setInterval(this._tick.bind(this), 1000);
   }
 
   printTime() {
     // Format the time in HH:MM:SS
-    // Use console.log to print it.
-    let time = `${this.hours}:${this.minutes}:${this.seconds}`;
-    console.log("current time => " + time);
-    // console.log("current time => " + date);
+    const timeString = [this.hours, this.minutes, this.seconds].join(":");
+
+    // Now we'll return the string instead of printing it.
+    return timeString;
   }
 
   _tick() {
-    if (this.seconds === 59) {
-      this.seconds = 0;
-      this.minutes += 1;
-    } else {
-      this.seconds += 1;
-    }
+    this._incrementSeconds();
+    // append our clock HTML
+    htmlGenerator(clock.printTime(), clockElement);
+  }
 
-    if (this.minutes === 59 && this.seconds === 59) {
-      this.minutes = 0;
-      this.hours += 1;
-    }
-
-    if (this.hours === 23 && this.minutes === 59 && this.seconds === 59) {
-      this.hours = 0;
-    }
+  _incrementSeconds() {
     // 1. Increment the time by one second.
-    // 2. Call printTime.
-    this.printTime()
+    this.seconds += 1;
+    if (this.seconds === 60) {
+      this.seconds = 0;
+      this._incrementMinutes();
+    }
+  }
+
+  _incrementMinutes() {
+    this.minutes += 1;
+    if (this.minutes === 60) {
+      this.minutes = 0;
+      this._incrementHours();
+    }
+  }
+
+  _incrementHours() {
+    this.hours = (this.hours + 1) % 24;
   }
 }
 
-const clock = new Clock();
+// Grab onto the Element we want to use for the Clock.
 const clockElement = document.getElementById('clock');
-htmlGenerator('Clock Time.', clock);
+const clock = new Clock();
