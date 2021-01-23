@@ -32,4 +32,19 @@ function attachDogLinks(){
   });
 }
 
+const dogLists = document.querySelector('.drop-down-dog-list');
+dogLists.addEventListener("mouseenter", handleEnter);
+dogLists.addEventListener("mouseleave", handleLeave);
+
+
+
+const handleEnter = (e) => {
+  //add code here to set display in-line block of li items
+};
+
+const handleLeave = (e) => {
+  //add code here to set display none of li items
+};
+
+
 attachDogLinks();
