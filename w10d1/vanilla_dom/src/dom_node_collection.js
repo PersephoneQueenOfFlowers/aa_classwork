@@ -65,6 +65,23 @@ class DOMNodeCollection {
   }
 
   parent(){
+    let parentArray = [];
+    this.htmlCollection.forEach(el => {
+      parentArray.push(el.parentElement);
+    });
+    return new DOMNodeCollection(parentArray);
+  }
+  
+  find(selector){
+    let foundNodes = [];
+    this.htmlCollection.forEach(el => {
+      let nodes = el.querySelectorAll(selector);
+      foundNodes = foundNodes.concat(nodes);
+    });
+    return new DOMNodeCollection(foundNodes);
+  }
+
+  remove(){
     
   }
 }
