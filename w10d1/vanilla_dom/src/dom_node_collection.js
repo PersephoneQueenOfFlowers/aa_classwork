@@ -31,6 +31,16 @@ class DOMNodeCollection {
       arg.htmlCollection.forEach (node => this.append(node));
     }
   }
+
+  attr(){
+    console.log("in attr");
+    return this.htmlCollection.map(el => el.attributes);
+  }
+  
+  addClass(arg){
+    this.htmlCollection.forEach(el => el.classList.add(arg));
+  }
+  removeClass(){}
   
 }
 
