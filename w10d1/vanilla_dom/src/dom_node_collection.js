@@ -82,7 +82,23 @@ class DOMNodeCollection {
   }
 
   remove(){
-    
+    //this.htmlCollection // our array of HTMLElements
+    this.htmlCollection.forEach(el => el.outerHTML = "");
+  }
+
+  on(type, callback){
+    //want to add listeners to each element in htmlCollection
+    this.htmlCollection.forEach(el => {
+      el.addEventListener(type, callback);
+      el[type] = callback;
+    });
+  }
+
+  off(type){
+    this.htmlCollection.forEach(el => {
+      let callback = el[type];
+      el.removeEventListener(type, callback);
+    });
   }
 }
 
