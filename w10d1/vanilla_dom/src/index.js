@@ -5,8 +5,9 @@ window.$l = function(arg){
   if(typeof arg === "string"){
     const nodeList = document.querySelectorAll(arg);
     const nodeListArr = Array.from(nodeList);
-    
-    return nodeListArr;
+    return new DOMNodeCollection(nodeListArr);
+  }else if( arg instanceof HTMLElement ){
+    return new DOMNodeCollection([arg]);
   }
 
-} // not sure what this arg will be yet.
+}

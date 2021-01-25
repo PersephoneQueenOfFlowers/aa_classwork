@@ -15,7 +15,7 @@
   \************************************/
 /***/ ((module) => {
 
-eval("class DOMNodeCollection {\n  constructor(htmlElements){\n    this.htmlCollection = htmlElements;\n  }\n}\n\n\nmodule.exports = DOMNodeCollection;\n\n//# sourceURL=webpack:///./src/dom_node_collection.js?");
+eval("class DOMNodeCollection {\n  constructor(htmlElements){\n    this.htmlCollection = htmlElements;\n  }\n\n  html(str){\n    if(typeof str === 'string'){\n      this.htmlCollection.forEach(el => el.innerHTML = str);\n    }else {\n      return this.htmlCollection[0].innerHTML;\n    }\n  }\n\n  empty(){\n    this.html(\"\");\n  }\n  // calling object is the partent. parameter / arg is the object to append. \n  // This method should accept either a jQuery-lite wrapped \n  // collection, an HTML element, or a string. \n  append(arg){\n    if (typeof str === 'string') {\n\n    } else if (arg instanceof HTMLElement ){\n\n    } else {\n      \n    }\n  }\n}\n\n\nmodule.exports = DOMNodeCollection;\n\n//# sourceURL=webpack:///./src/dom_node_collection.js?");
 
 /***/ })
 
@@ -49,7 +49,7 @@ eval("class DOMNodeCollection {\n  constructor(htmlElements){\n    this.htmlColl
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-eval("const DOMNodeCollection = __webpack_require__ (/*! ./dom_node_collection */ \"./src/dom_node_collection.js\");\n\n\nwindow.$l = function(arg){\n  if(typeof arg === \"string\"){\n    const nodeList = document.querySelectorAll(arg);\n    const nodeListArr = Array.from(nodeList);\n    \n    return nodeListArr;\n  }\n\n} // not sure what this arg will be yet.\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const DOMNodeCollection = __webpack_require__ (/*! ./dom_node_collection */ \"./src/dom_node_collection.js\");\n\n\nwindow.$l = function(arg){\n  if(typeof arg === \"string\"){\n    const nodeList = document.querySelectorAll(arg);\n    const nodeListArr = Array.from(nodeList);\n    return new DOMNodeCollection(nodeListArr);\n  }else if( arg instanceof HTMLElement ){\n    return new DOMNodeCollection([arg]);\n  }\n\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 })();
 
 /******/ })()
