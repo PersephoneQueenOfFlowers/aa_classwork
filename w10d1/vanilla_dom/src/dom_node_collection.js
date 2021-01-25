@@ -38,10 +38,35 @@ class DOMNodeCollection {
   }
   
   addClass(arg){
-    this.htmlCollection.forEach(el => el.classList.add(arg));
+    // check type of arg -> if string do sth, if arr do sth else
+    if (typeof arg === 'string'){
+      this.htmlCollection.forEach(el => el.classList.add(arg));
+    }
+    else{
+      this.htmlCollection.forEach(el => el.classList.add(...arg));
+    }
   }
-  removeClass(){}
+  removeClass(arg){
+    if (typeof arg === 'string'){
+      this.htmlCollection.forEach(el => el.classList.remove(arg));
+    }
+    else{
+      this.htmlCollection.forEach(el => el.classList.remove(...arg));
+    }
+  }
   
+  children(){
+    //return an instance of DOMNodeCollection
+    let childArr = [];
+    this.htmlCollection.forEach(node => {
+      childArr = childArr.concat(Array.from(node.children));
+    });
+    return new DOMNodeCollection(childArr);
+  }
+
+  parent(){
+    
+  }
 }
 
 
