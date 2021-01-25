@@ -22,8 +22,8 @@ class DOMNodeCollection {
 
     } else if (arg instanceof HTMLElement ){
 
-    } else {
-      
+    } else if(arg instanceof DOMNodeCollection){
+
     }
   }
 }
