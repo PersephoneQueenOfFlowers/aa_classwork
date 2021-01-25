@@ -1,6 +1,6 @@
 class DOMNodeCollection {
   constructor(htmlElements){
-    this.htmlCollection = htmlElements;
+    this.htmlCollection = htmlElements; //array of HTMLElements
   }
 
   html(str){
@@ -18,14 +18,20 @@ class DOMNodeCollection {
   // This method should accept either a jQuery-lite wrapped 
   // collection, an HTML element, or a string. 
   append(arg){
-    if (typeof str === 'string') {
-
+    if (typeof arg === 'string') {
+      console.log("hit")
+      this.htmlCollection.forEach( ele => {
+        ele.innerHTML += arg
+      });
     } else if (arg instanceof HTMLElement ){
-
+      this.htmlCollection.forEach( ele => {
+        ele.innerHTML += arg.outerHTML
+      });
     } else if(arg instanceof DOMNodeCollection){
-
+      arg.htmlCollection.forEach (node => this.append(node));
     }
   }
+  
 }
 
 
