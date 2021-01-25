@@ -10,6 +10,6 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("window.$l = function(arg){\n\n  if(typeof arg === \"string\"){\n    const nodeList = document.querySelectorAll(arg);\n    console.log(\"nodeList: \" + nodeList);\n    return nodeList;\n  }\n\n} // not sure what this arg will be yet.\n\n//# sourceURL=webpack:///./src/index.js?");
 /******/ })()
 ;
