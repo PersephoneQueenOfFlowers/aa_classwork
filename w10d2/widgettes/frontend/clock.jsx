@@ -2,23 +2,27 @@ import React from 'react';
 class Clock extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {time: new Date()};
+    this.state = {time:''};
+    this._setTime();
     setInterval(this._tick.bind(this), 1000);
   }
 
   _tick() {
+    this._setTime();
+  }
+
+  _setTime(){
     let time = new Date();
     let hours = time.getHours();
     let minutes = time.getMinutes();
     let seconds = time.getSeconds();
     let timeString = `${hours}:${minutes}:${seconds}`;
     this.setState({ time: timeString });
-    return `${hours}:${minutes}:${seconds}`;
   }
 
   render() {
     return (
-      <div>
+      <div className="clock-container">
         <h1>Clock</h1>
         <h2 className="time">{ this.state.time }</h2>
       </div>

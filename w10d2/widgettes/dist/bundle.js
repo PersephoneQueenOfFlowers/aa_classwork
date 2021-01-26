@@ -133,8 +133,11 @@ var Clock = /*#__PURE__*/function (_React$Component) {
 
     _this = _super.call(this, props);
     _this.state = {
-      time: new Date()
+      time: ''
     };
+
+    _this._setTime();
+
     setInterval(_this._tick.bind(_assertThisInitialized(_this)), 1000);
     return _this;
   }
@@ -142,6 +145,11 @@ var Clock = /*#__PURE__*/function (_React$Component) {
   _createClass(Clock, [{
     key: "_tick",
     value: function _tick() {
+      this._setTime();
+    }
+  }, {
+    key: "_setTime",
+    value: function _setTime() {
       var time = new Date();
       var hours = time.getHours();
       var minutes = time.getMinutes();
@@ -150,12 +158,13 @@ var Clock = /*#__PURE__*/function (_React$Component) {
       this.setState({
         time: timeString
       });
-      return "".concat(hours, ":").concat(minutes, ":").concat(seconds);
     }
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Clock"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "clock-container"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Clock"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         className: "time"
       }, this.state.time));
     }
