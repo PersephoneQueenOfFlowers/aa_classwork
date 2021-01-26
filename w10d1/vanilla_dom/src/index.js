@@ -20,6 +20,15 @@ window.$l = function(arg){
   }
 }
 
+window.$l.extend = function(...args){
+  const mergedObject = {};
+  for (object of [...args]) {
+    for (key in object) { 
+      mergedObject[key] = object[key];
+    }
+  } 
+  return args[0] = mergedObject;
+}
 
 window.$l(()=> console.log("hi"));
 console.log("after hi in code but before hi in console!");
