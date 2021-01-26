@@ -1,5 +1,7 @@
 const DOMNodeCollection = require ('./dom_node_collection');
+
 const callbackQueue = [];
+
 window.$l = function(arg){
   if(typeof arg === "string"){
     const nodeList = document.querySelectorAll(arg);
@@ -8,19 +10,21 @@ window.$l = function(arg){
   }else if( arg instanceof HTMLElement ){
     return new DOMNodeCollection([arg]);
   } else if(typeof arg === "function"){
-
-    if (document.readyState !== "complete"){
-      arg();  
-    }else{
+    // console.log(document.readyState);
+    if (document.readyState !== "complete"){ //document.readyState is loading 
       callbackQueue.push(arg);
+    }else{ //document.readyState is complete
+      // console.log("immediate invoke");
+      arg();  
     }
   }
 }
 
+
+window.$l(()=> console.log("hi"));
+console.log("after hi in code but before hi in console!");
+
 document.addEventListener('DOMContentLoaded', () => {
   callbackQueue.forEach(func => func());
 });
-// addToCallbackQueue = function(funct){
-
-// }();
 
