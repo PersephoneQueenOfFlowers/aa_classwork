@@ -142,9 +142,15 @@ var Clock = /*#__PURE__*/function (_React$Component) {
   _createClass(Clock, [{
     key: "_tick",
     value: function _tick() {
+      var time = new Date();
+      var hours = time.getHours();
+      var minutes = time.getMinutes();
+      var seconds = time.getSeconds();
+      var timeString = "".concat(hours, ":").concat(minutes, ":").concat(seconds);
       this.setState({
-        time: new Date()
+        time: timeString
       });
+      return "".concat(hours, ":").concat(minutes, ":").concat(seconds);
     }
   }, {
     key: "render",

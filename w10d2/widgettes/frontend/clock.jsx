@@ -7,14 +7,20 @@ class Clock extends React.Component {
   }
 
   _tick() {
-    this.setState({ time: new Date() });
+    let time = new Date();
+    let hours = time.getHours();
+    let minutes = time.getMinutes();
+    let seconds = time.getSeconds();
+    let timeString = `${hours}:${minutes}:${seconds}`;
+    this.setState({ time: timeString });
+    return `${hours}:${minutes}:${seconds}`;
   }
 
   render() {
     return (
       <div>
         <h1>Clock</h1>
-        <h2 className="time">{this.state.time}</h2>
+        <h2 className="time">{ this.state.time }</h2>
       </div>
       );
   }
