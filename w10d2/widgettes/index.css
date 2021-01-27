@@ -4,6 +4,14 @@
   justify-content: space-between;
   width: 300px;
   margin: 0 auto;
+  background-image: url('./bernie-sanders-mittens-meme-transparent-background-free.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  background-position-x: -120px;
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 h2.time{
