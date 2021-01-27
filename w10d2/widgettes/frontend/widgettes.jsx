@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom';
 import Clock from './clock';
 import Tabs from './tabs';
 
+
+
 class Widgette extends React.Component {
+
+  tabs(){
+    return ["whatup?!", "goals" ].map( 
+      (title) => {return {title}});
+  }
+
   render() {
     return (
       <div>
         <p>hello world from widgettes</p>
-        <Tabs />
+        <Tabs tabs={this.tabs()}/>
         <Clock />
         </div>
     );

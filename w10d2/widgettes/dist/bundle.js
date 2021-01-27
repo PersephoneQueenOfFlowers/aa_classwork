@@ -135,9 +135,6 @@ var Clock = /*#__PURE__*/function (_React$Component) {
     _this.state = {
       time: ''
     };
-
-    _this._setTime();
-
     setInterval(_this._tick.bind(_assertThisInitialized(_this)), 1000);
     return _this;
   }
@@ -181,10 +178,74 @@ var Clock = /*#__PURE__*/function (_React$Component) {
 /*!***************************!*\
   !*** ./frontend/tabs.jsx ***!
   \***************************/
-/*! no exports provided */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/frontend/tabs.jsx: super() is only valid inside a class constructor of a subclass. Maybe a typo in the method name ('constructor') or not extending another class? (5:4)\n\n\u001b[0m \u001b[90m 3 | \u001b[39m\u001b[36mclass\u001b[39m \u001b[33mTabs\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 4 | \u001b[39m  constructor(props\u001b[33m,\u001b[39mtitle\u001b[33m,\u001b[39mcontent) {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 | \u001b[39m    \u001b[36msuper\u001b[39m(props)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   | \u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 6 | \u001b[39m    \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mtitle \u001b[33m=\u001b[39m title\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 7 | \u001b[39m    \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcontent \u001b[33m=\u001b[39m content\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 8 | \u001b[39m    \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mindex \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n    at Object._raise (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:748:17)\n    at Object.raiseWithData (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:741:17)\n    at Object.raise (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:735:17)\n    at Object.parseSuper (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:10610:12)\n    at Object.parseExprAtom (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:10384:21)\n    at Object.parseExprAtom (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:4763:20)\n    at Object.parseExprSubscripts (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:10150:23)\n    at Object.parseUpdate (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:10130:21)\n    at Object.parseMaybeUnary (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:10119:17)\n    at Object.parseExprOps (/home/comstar/development/AppAcademy/Work/Seth_aa-classwork/w10d2/widgettes/node_modules/@babel/parser/lib/index.js:9989:23)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+var Tabs = /*#__PURE__*/function (_React$Component) {
+  _inherits(Tabs, _React$Component);
+
+  var _super = _createSuper(Tabs);
+
+  function Tabs(props) {
+    var _this;
+
+    _classCallCheck(this, Tabs);
+
+    _this = _super.call(this, props);
+    _this.tabs = props.tabs;
+    _this.index = 0;
+    return _this;
+  }
+
+  _createClass(Tabs, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "tab-container"
+      }, this.tabs.map(function (el) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          key: el.title
+        }, el.title);
+      }));
+    }
+  }]);
+
+  return Tabs;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Tabs);
+/*
+In the render method of Tabs, render a collection of <h1>s (with titles) in a <ul> and the content of the selected tab in an <article>.
+Consider creating a Header subcomponent for the tabs.
+*/
 
 /***/ }),
 
@@ -242,9 +303,20 @@ var Widgette = /*#__PURE__*/function (_React$Component) {
   }
 
   _createClass(Widgette, [{
+    key: "tabs",
+    value: function tabs() {
+      return ["whatup?!", "goals"].map(function (title) {
+        return {
+          title: title
+        };
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "hello world from widgettes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tabs__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_clock__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "hello world from widgettes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        tabs: this.tabs()
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_clock__WEBPACK_IMPORTED_MODULE_2__["default"], null));
     }
   }]);
 

@@ -1,17 +1,22 @@
 import React from 'react';
 
-class Tabs {
-  constructor(props,title,content) {
+class Tabs extends React.Component{
+  constructor(props) {
     super(props);
-    this.title = title;
-    this.content = content;
+    this.tabs = props.tabs;
     this.index = 0;
   }
 
   render(){
+    return (
     <div className="tab-container">
-      {this.state.title}
+      {
+        this.tabs.map( el => { 
+          return (<h1 key={el.title}>{el.title}</h1>);
+         })
+      }
     </div>
+    );
   }
 }
 

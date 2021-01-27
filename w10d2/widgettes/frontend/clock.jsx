@@ -3,7 +3,6 @@ class Clock extends React.Component {
   constructor(props) {
     super(props);
     this.state = {time:''};
-    this._setTime();
     setInterval(this._tick.bind(this), 1000);
   }
 
