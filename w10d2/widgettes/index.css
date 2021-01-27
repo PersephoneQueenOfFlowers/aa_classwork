@@ -14,6 +14,28 @@
   padding: 20px;
 }
 
+.tab-container {
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-around;
+  max-width: 400px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.tab-container li > h1 {
+  border: 1px solid #666;
+  padding: 20px;
+  background-color: #ebb;
+  border-radius: 15px 15px 0 0;
+  min-width: 200px;
+  text-align: center;
+}
+
+.tab-container li.hide *:not(h1) {
+  display: none;
+}
+
 h2.time{
   font-family: 'Ultra', serif;
 }

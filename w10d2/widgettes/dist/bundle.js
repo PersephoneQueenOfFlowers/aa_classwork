@@ -222,18 +222,53 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
     _this = _super.call(this, props);
     _this.tabs = props.tabs;
     _this.index = 0;
+    _this.state = {
+      active: ""
+    };
     return _this;
   }
 
   _createClass(Tabs, [{
+    key: "addActiveClass",
+    value: function addActiveClass(e) {
+      e.preventDefault();
+      var clicked = e.target.id;
+      console.log(e);
+
+      if (this.state.active === clicked) {
+        this.setState({
+          active: ""
+        });
+      } else {
+        this.setState({
+          active: clicked
+        });
+      }
+    }
+  }, {
+    key: "classInfo",
+    value: function classInfo(ele) {
+      console.log(ele);
+
+      if (this.state.active === ele.id) {
+        return "tab show";
+      } else {
+        return "tab hide";
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      var _this2 = this;
+
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "tab-container"
-      }, this.tabs.map(function (el) {
-        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-          key: el.title
-        }, el.title);
+      }, this.tabs.map(function (el, idx) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          key: el.title,
+          className: _this2.classInfo(el),
+          onClick: _this2.addActiveClass.bind(_this2)
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, el.title), el.content);
       }));
     }
   }]);
@@ -262,8 +297,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./clock */ "./frontend/clock.jsx");
-/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs */ "./frontend/tabs.jsx");
+/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tabs */ "./frontend/tabs.jsx");
+/* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./clock */ "./frontend/clock.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -305,18 +340,20 @@ var Widgette = /*#__PURE__*/function (_React$Component) {
   _createClass(Widgette, [{
     key: "tabs",
     value: function tabs() {
-      return ["whatup?!", "goals"].map(function (title) {
+      var content = ["", "", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_clock__WEBPACK_IMPORTED_MODULE_3__["default"], null)];
+      return ["whatup?!", "goals", "clock"].map(function (title, idx) {
         return {
-          title: title
+          title: title,
+          content: content[idx]
         };
       });
     }
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "hello world from widgettes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tabs__WEBPACK_IMPORTED_MODULE_2__["default"], {
         tabs: this.tabs()
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_clock__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      }));
     }
   }]);
 

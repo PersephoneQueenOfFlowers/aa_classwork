@@ -1,24 +1,22 @@
 import React    from 'react';
 import ReactDOM from 'react-dom';
-import Clock from './clock';
 import Tabs from './tabs';
-
+import Clock from './clock';
 
 
 class Widgette extends React.Component {
 
   tabs(){
-    return ["whatup?!", "goals" ].map( 
-      (title) => {return {title}});
+    const content = ["","",(<Clock />)];
+    return ["whatup?!", "goals", "clock" ].map( 
+      (title,idx) => {return {title, content: content[idx]}});
   }
 
   render() {
     return (
       <div>
-        <p>hello world from widgettes</p>
         <Tabs tabs={this.tabs()}/>
-        <Clock />
-        </div>
+      </div>
     );
   }
 }
