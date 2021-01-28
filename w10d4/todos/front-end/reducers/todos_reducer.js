@@ -1,4 +1,4 @@
-import { RECEIVE_TODO, RECEIVE_TODOS } from '../actions/todo_actions';
+import { RECEIVE_TODO, RECEIVE_TODOS, REMOVE_TODO } from '../actions/todo_actions';
 const StarterToDos = {
   1: {
     id: 1,
@@ -12,7 +12,7 @@ const StarterToDos = {
     body: 'with shampoo',
     done: true
   },
-}
+};
 
 const toDosReducer = (state = StarterToDos, action) => {
   Object.freeze(state);
@@ -24,8 +24,12 @@ const toDosReducer = (state = StarterToDos, action) => {
       }); 
       return newState;
     case RECEIVE_TODO:
-      let newToDo = { [action.toDo.id]: action.toDo }
+      let newToDo = { [action.toDo.id]: action.toDo };
       return Object.assign({}, state, newToDo);
+    case REMOVE_TODO:
+      let removed = [action.toDo.id];
+      delete newState[removed];
+      return newState;
     default: 
       return state;
   }
