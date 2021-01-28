@@ -104,8 +104,8 @@ __webpack_require__.r(__webpack_exports__);
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Welcome to the todos");
-  var reactRoot = document.getElementById('root');
-  window.store = configureStore();
+  var reactRoot = document.getElementById('root'); //window.store = configureStore();
+
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "welcome to todo app"), reactRoot);
 });
 

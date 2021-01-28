@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Welcome to the todos");
   const reactRoot = document.getElementById('root');
-  window.store = configureStore();
+  //window.store = configureStore();
 
   ReactDOM.render(<h1>welcome to todo app</h1>, reactRoot);
 })
