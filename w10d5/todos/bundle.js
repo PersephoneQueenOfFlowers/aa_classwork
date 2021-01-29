@@ -181,7 +181,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Todo List!"));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Todo List!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_todos_todo_list_container__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -228,9 +228,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Todo List goes here!");
-}); // import TeaForm from './tea_form';
+
+var todoIndex = function todoIndex(_ref) {
+  var todos = _ref.todos;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "EVERYTHING TODO "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, todos.map(function (toDo) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      key: toDo.id
+    }, "item: ", toDo.title);
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (todoIndex); // import TeaForm from './tea_form';
 // const TeaIndex = (props) => {
 //   return (
 //     <div>
@@ -274,13 +282,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var mapStateToProps = function mapStateToProps(state) {
-  toDos: Object(_reducers_selectors__WEBPACK_IMPORTED_MODULE_2__["allTodos"])(state), state;
+  return {
+    todos: Object(_reducers_selectors__WEBPACK_IMPORTED_MODULE_2__["allTodos"])(state),
+    state: state
+  };
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-  receiveTodo: (function (todo) {
-    return dispatch(Object(_actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__["receiveTodo"])(todo));
-  });
+  return {
+    receiveTodo: function receiveTodo(todo) {
+      return dispatch(Object(_actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__["receiveTodo"])(todo));
+    }
+  };
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps, mapDispatchToProps)(_todo_list__WEBPACK_IMPORTED_MODULE_1__["default"]));
@@ -318,9 +331,27 @@ var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])(
   !*** ./front-end/reducers/selectors.js ***!
   \*****************************************/
 /*! exports provided: allTodos */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/front-end/reducers/selectors.js: Unexpected token, expected \",\" (10:34)\n\n\u001b[0m \u001b[90m  8 | \u001b[39m\u001b[90m// export default allTodos;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m  9 | \u001b[39m\u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m allTodos \u001b[33m=\u001b[39m ({ toDos }) \u001b[33m=>\u001b[39m (\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 | \u001b[39m    console\u001b[33m.\u001b[39mlog(\u001b[32m\"todos: \"\u001b[39m \u001b[33m+\u001b[39m toDos)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 11 | \u001b[39m    \u001b[33mObject\u001b[39m\u001b[33m.\u001b[39mkeys(toDos)\u001b[33m.\u001b[39mmap(id \u001b[33m=>\u001b[39m toDos[id])\u001b[0m\n\u001b[0m \u001b[90m 12 | \u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 13 | \u001b[39m\u001b[0m\n    at Object._raise (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:748:17)\n    at Object.raiseWithData (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:741:17)\n    at Object.raise (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:735:17)\n    at Object.unexpected (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9101:16)\n    at Object.expect (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9087:28)\n    at Object.parseParenAndDistinguishExpression (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10736:14)\n    at Object.parseExprAtom (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10470:21)\n    at Object.parseExprAtom (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:4763:20)\n    at Object.parseExprSubscripts (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10150:23)\n    at Object.parseUpdate (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10130:21)\n    at Object.parseMaybeUnary (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10119:17)\n    at Object.parseExprOps (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9989:23)\n    at Object.parseMaybeConditional (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9963:23)\n    at Object.parseMaybeAssign (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9926:21)\n    at Object.parseFunctionBody (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:11214:24)\n    at Object.parseArrowExpression (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:11193:10)\n    at Object.parseParenAndDistinguishExpression (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10766:12)\n    at Object.parseExprAtom (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10470:21)\n    at Object.parseExprAtom (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:4763:20)\n    at Object.parseExprSubscripts (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10150:23)\n    at Object.parseUpdate (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10130:21)\n    at Object.parseMaybeUnary (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:10119:17)\n    at Object.parseExprOps (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9989:23)\n    at Object.parseMaybeConditional (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9963:23)\n    at Object.parseMaybeAssign (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9926:21)\n    at allowInAnd (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9893:39)\n    at Object.allowInAnd (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:11541:16)\n    at Object.parseMaybeAssignAllowIn (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:9893:17)\n    at Object.parseVar (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:12339:70)\n    at Object.parseVarStatement (/Users/sethschoenfeld/Desktop/aa_classwork/w10d5/todos/node_modules/@babel/parser/lib/index.js:12151:10)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "allTodos", function() { return allTodos; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+ // const allTodos = ({ todos }) => {
+//   const todosArr = Object.values({todos});
+//   return todosArr;
+// }
+// export default allTodos;
+
+var allTodos = function allTodos(_ref) {
+  var toDos = _ref.toDos;
+  return (//console.log("todos: " + toDos);
+    Object.keys(toDos).map(function (id) {
+      return toDos[id];
+    })
+  );
+};
 
 /***/ }),
 
@@ -482,7 +513,7 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Welcome to the todos");
   var reactRoot = document.getElementById('root');
-  window.store = Object(_store_store__WEBPACK_IMPORTED_MODULE_5__["default"])(_reducers_selectors_js__WEBPACK_IMPORTED_MODULE_6__["allTodos"]);
+  window.store = Object(_store_store__WEBPACK_IMPORTED_MODULE_5__["default"])();
   window.receiveTodo = _actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__["receiveTodo"];
   window.receiveTodos = _actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__["receiveTodos"];
   window.removeTodo = _actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__["removeTodo"];

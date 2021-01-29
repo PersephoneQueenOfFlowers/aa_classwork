@@ -9,7 +9,7 @@ import { allTodos } from './reducers/selectors.js';
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Welcome to the todos");
   const reactRoot = document.getElementById('root');
-  window.store = configureStore(allTodos);
+  window.store = configureStore();
   window.receiveTodo = receiveTodo;
   window.receiveTodos = receiveTodos;
   window.removeTodo = removeTodo;

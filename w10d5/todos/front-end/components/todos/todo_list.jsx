@@ -1,6 +1,20 @@
 import React from 'react';
 
-export default () => <h3>Todo List goes here!</h3>
+
+const todoIndex = ({todos}) => {
+    return(
+        <div> 
+            <h1>EVERYTHING TODO </h1>
+            <ul>
+                {todos.map((toDo) => (
+                    <li key={toDo.id}>item: {toDo.title}</li>
+                ))}
+                
+            </ul>
+        </div>
+    );
+}
+export default todoIndex;
 
 
 
