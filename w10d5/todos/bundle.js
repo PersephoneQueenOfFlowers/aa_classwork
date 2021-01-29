@@ -244,24 +244,26 @@ var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])(
 /*!*****************************************!*\
   !*** ./front-end/reducers/selectors.js ***!
   \*****************************************/
-/*! exports provided: default */
+/*! exports provided: allTodos */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "allTodos", function() { return allTodos; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
+ // const allTodos = ({ todos }) => {
+//   const todosArr = Object.values({todos});
+//   return todosArr;
+// }
+// export default allTodos;
 
 var allTodos = function allTodos(_ref) {
-  var todos = _ref.todos;
-  var todosArr = Object.values({
-    todos: todos
+  var toDos = _ref.toDos;
+  return Object.keys(toDos).map(function (id) {
+    return toDos[id];
   });
-  return todosArr;
 };
-
-/* harmony default export */ __webpack_exports__["default"] = (allTodos);
 
 /***/ }),
 
@@ -423,14 +425,14 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Welcome to the todos");
   var reactRoot = document.getElementById('root');
-  window.store = Object(_store_store__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  window.store = Object(_store_store__WEBPACK_IMPORTED_MODULE_5__["default"])(_reducers_selectors_js__WEBPACK_IMPORTED_MODULE_6__["allTodos"]);
   window.receiveTodo = _actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__["receiveTodo"];
   window.receiveTodos = _actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__["receiveTodos"];
   window.removeTodo = _actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__["removeTodo"];
   window.receiveStep = _actions_step_actions__WEBPACK_IMPORTED_MODULE_4__["receiveStep"];
   window.receiveSteps = _actions_step_actions__WEBPACK_IMPORTED_MODULE_4__["receiveSteps"];
   window.removeStep = _actions_step_actions__WEBPACK_IMPORTED_MODULE_4__["removeStep"];
-  window.todos = _reducers_selectors_js__WEBPACK_IMPORTED_MODULE_6__["default"];
+  window.todos = _reducers_selectors_js__WEBPACK_IMPORTED_MODULE_6__["allTodos"];
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_root_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     store: store
   }), reactRoot);

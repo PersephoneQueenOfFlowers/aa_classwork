@@ -4,12 +4,12 @@ import Root from './components/root.jsx';
 import { receiveTodo, receiveTodos, removeTodo, } from './actions/todo_actions';
 import { receiveStep, receiveSteps, removeStep, } from './actions/step_actions';
 import configureStore from './store/store'; // exported default 
-import allTodos from './reducers/selectors.js';
+import { allTodos } from './reducers/selectors.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Welcome to the todos");
   const reactRoot = document.getElementById('root');
-  window.store = configureStore();
+  window.store = configureStore(allTodos);
   window.receiveTodo = receiveTodo;
   window.receiveTodos = receiveTodos;
   window.removeTodo = removeTodo;
