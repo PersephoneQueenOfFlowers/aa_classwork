@@ -7,8 +7,9 @@ import React from 'react';
 
 // export default allTodos;
 export const allTodos = ({ toDos }) => (
+    console.log("todos: " + toDos);
     Object.keys(toDos).map(id => toDos[id])
-);
+)
 
 
 
