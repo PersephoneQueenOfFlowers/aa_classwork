@@ -4,6 +4,7 @@ import Root from './components/root.jsx';
 import { receiveTodo, receiveTodos, removeTodo, } from './actions/todo_actions';
 import { receiveStep, receiveSteps, removeStep, } from './actions/step_actions';
 import configureStore from './store/store'; // exported default 
+import allTodos from './reducers/selectors.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Welcome to the todos");
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.receiveStep = receiveStep;
   window.receiveSteps = receiveSteps;
   window.removeStep = removeStep;
-
+  window.todos = allTodos;
   ReactDOM.render(<Root store={store}/>, reactRoot);
 });
 

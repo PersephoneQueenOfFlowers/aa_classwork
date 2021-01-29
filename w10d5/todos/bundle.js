@@ -240,6 +240,31 @@ var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])(
 
 /***/ }),
 
+/***/ "./front-end/reducers/selectors.js":
+/*!*****************************************!*\
+  !*** ./front-end/reducers/selectors.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var allTodos = function allTodos(_ref) {
+  var todos = _ref.todos;
+  var todosArr = Object.values({
+    todos: todos
+  });
+  return todosArr;
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (allTodos);
+
+/***/ }),
+
 /***/ "./front-end/reducers/steps_reducer.js":
 /*!*********************************************!*\
   !*** ./front-end/reducers/steps_reducer.js ***!
@@ -386,12 +411,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _actions_todo_actions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./actions/todo_actions */ "./front-end/actions/todo_actions.js");
 /* harmony import */ var _actions_step_actions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./actions/step_actions */ "./front-end/actions/step_actions.js");
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./store/store */ "./front-end/store/store.js");
+/* harmony import */ var _reducers_selectors_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./reducers/selectors.js */ "./front-end/reducers/selectors.js");
 
 
 
 
 
  // exported default 
+
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Welcome to the todos");
@@ -403,6 +430,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.receiveStep = _actions_step_actions__WEBPACK_IMPORTED_MODULE_4__["receiveStep"];
   window.receiveSteps = _actions_step_actions__WEBPACK_IMPORTED_MODULE_4__["receiveSteps"];
   window.removeStep = _actions_step_actions__WEBPACK_IMPORTED_MODULE_4__["removeStep"];
+  window.todos = _reducers_selectors_js__WEBPACK_IMPORTED_MODULE_6__["default"];
   react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_root_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
     store: store
   }), reactRoot);
