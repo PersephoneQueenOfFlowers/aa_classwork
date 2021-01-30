@@ -1,5 +1,6 @@
 import React from 'react';
-
+import TodoItem from './todo_list_item';
+import TodoForm from './todo_form';
 
 const todoIndex = ({todos}) => {
     return(
@@ -7,10 +8,11 @@ const todoIndex = ({todos}) => {
             <h1>EVERYTHING TODO </h1>
             <ul>
                 {todos.map((toDo) => (
-                    <li key={toDo.id}>item: {toDo.title}</li>
+                    <TodoItem key={toDo.id} todo={toDo} />
+                    
                 ))}
-                
             </ul>
+            <TodoForm />
         </div>
     );
 }
