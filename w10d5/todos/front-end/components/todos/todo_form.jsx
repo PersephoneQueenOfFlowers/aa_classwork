@@ -6,7 +6,8 @@ class TodoForm extends React.Component {
     this.state = {
       title: '',
       body: '',
-      done: false
+      done: false,
+      id: Math.floor(Math.random() * Math.floor(1000))
     }
     this.updateBody = this.updateBody.bind(this);
     this.updateTitle = this.updateTitle.bind(this);
@@ -18,14 +19,15 @@ class TodoForm extends React.Component {
   }
 
   updateBody(e) {
-    this.setState({ body: e.target.value })
+    this.setState({ body: e.target.value });
   }
 
   handleSubmit(e) {
     // default form behavior is to submit a get request with query string added to URL
     e.preventDefault();
+    this.state.id = Math.floor(Math.random() * Math.floor(1000));
     this.props.receiveTodo(this.state);
-    this.setState({ title: e.target.title, body: this.target.body })
+    this.setState({ title: '', body: '' })
 
   }
 

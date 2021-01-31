@@ -23,11 +23,3 @@ export const removeTodo = (toDo) => {
         toDo
     };
 };
-
-
-
-
-
-// todo {id: 1, title: asdfa, body: sdfa, done: false}
-
-// todo co
