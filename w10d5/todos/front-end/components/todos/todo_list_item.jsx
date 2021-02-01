@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoDetailViewContainer from './todo_detail_view_container';
-
+import StepListContainer from '../step_list/step_list_container';
 class TodoItem extends React.Component {
   constructor(props){
     super(props)
@@ -60,6 +60,7 @@ class TodoItem extends React.Component {
           </button>
         </div>
         { this.state.details && <TodoDetailViewContainer details={this.state} />}
+        { this.state.details && <StepListContainer steps={this.state} />}
       </>
     )
   }

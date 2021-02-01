@@ -11,5 +11,10 @@ export const allTodos = ({ toDos }) => (
     Object.keys(toDos).map(id => toDos[id])
 )
 
+export const allSteps = ({ steps }) => (
+  //console.log("todos: " + toDos);
+  Object.keys(steps).map(id => steps[id])
+)
+
 
 
