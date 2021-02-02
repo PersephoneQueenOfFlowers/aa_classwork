@@ -6,9 +6,12 @@ class Api::GuestsController < ApplicationController
 
   def show
     @guest = Guest.find_by(id: params[:id])
-    debugger
+    # g = {}
+    # g[:age] = @guest.age
+    # g[:name] = @guest.name
+    # g[:favorite_color] = @guest.favorite_color    
     render :show
     #passed spec, now rendering too much info
-    #render json: @guest
+    # render json: g
   end
 end
