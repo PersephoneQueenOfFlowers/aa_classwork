@@ -14,7 +14,7 @@ const StarterToDos = {
   },
 };
 
-const toDosReducer = (state = StarterToDos, action) => {
+const toDosReducer = (state = {}, action) => {
   Object.freeze(state);
   let newState = Object.assign({}, state);
   switch(action.type){

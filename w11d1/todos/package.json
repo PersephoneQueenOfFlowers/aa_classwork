@@ -8,7 +8,6 @@
     "start": "webpack --watch --mode=development",
     "postinstall": "webpack",
     "webpack": "webpack --watch --mode=development"
-
   },
   "keywords": [],
   "author": "",
