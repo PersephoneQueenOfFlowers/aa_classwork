@@ -1,4 +1,2 @@
-
-
 # json.extract! user, :username
 
