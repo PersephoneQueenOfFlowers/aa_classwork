@@ -4,6 +4,7 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
     
     if @user.save
+      debugger
       login(@user)
       render :show
     else
@@ -14,10 +15,10 @@ class Api::UsersController < ApplicationController
   # def update
   # end
 
-  # def show
-  #   @user = selected_user
-  #   render :show
-  # end
+  def show
+    @user = selected_user
+    render :show
+  end
   
   # def index
   #   @users = User.all
